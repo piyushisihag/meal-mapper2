@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meal Mapper — Find Recipes Instantly</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">🗺️ Meal Mapper</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#recipes">Recipes</a></li>
+    <li><a href="#add-recipe">Add Recipe</a></li>
+    </ul>
+    <button class="nav-cta">Get Started</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">FOOD</div>
+    <div class="hero-content">
+      <h1 class="hero-title">Staring at your fridge <br/><em>with no idea?</em></h1>
+      <p class="hero-sub">Don't know what to cook? Not sure how to cook it? Type your ingredients and we'll instantly map out every meal you can make — step by step. We've got you covered. 🍽️</p>
+      <div class="hero-actions">
+        <a href="#recipes" class="btn-primary">Explore Recipes</a>
+        <a href="#about" class="btn-ghost">Learn More ↓</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="plate-ring ring-3"></div>
+      <div class="plate-ring ring-2"></div>
+      <div class="plate-ring ring-1"></div>
+      <div class="plate-center">🗺️</div>
+    </div>
+    <div class="scroll-hint">scroll</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-label">— About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Food is more than fuel.<br/><em>It's an experience.</em></h2>
+        <p>Meal Mapper was built for exactly that moment — it's 7pm, your stomach is growling, and you're staring at random ingredients with no idea what to cook.</p>
+        <p>We're a simple, smart recipe finder that takes the stress out of cooking. Tell us what's in your kitchen and we'll instantly map out every meal you can make, complete with step by step instructions. No fancy ingredients. No culinary skills required. Zero waste.</p>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num">300</span><span class="stat-label">Recipes</span></div>
+          <div class="stat"><span class="stat-num">50</span><span class="stat-label">Ingredients</span></div>
+          <div class="stat"><span class="stat-num">5</span><span class="stat-label">Cuisines</span></div>
+        </div>
+      </div>
+      <div class="about-card-stack">
+        <div class="about-card card-back">
+          <span class="card-emoji">🧄</span>
+          <p>Type your ingredients and find instant recipe matches</p>
+        </div>
+        <div class="about-card card-front">
+          <span class="card-emoji">🗺️</span>
+          <p>We map the best recipes from what you already have</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-label">— What We Offer</div>
+    <h2 class="section-title">Why <em>Meal Mapper?</em></h2>
+    <div class="features-grid">
+      <div class="feature-card" data-delay="0">
+        <div class="feature-icon">🔍</div>
+        <h3>Ingredient Search</h3>
+        <p>Type whatever you have at home — from pantry staples to fresh produce — and instantly find matching recipes.</p>
+      </div>
+      <div class="feature-card" data-delay="100">
+        <div class="feature-icon">🍛</div>
+        <h3>Indian & Global Recipes</h3>
+        <p>From dal tadka to pasta, vada pav to burgers — our database covers everyday Gen Z favourites.</p>
+      </div>
+      <div class="feature-card" data-delay="200">
+        <div class="feature-icon">📋</div>
+        <h3>Step by Step Guide</h3>
+        <p>Every recipe comes with clear, simple cooking instructions so even beginners can cook like a pro.</p>
+      </div>
+      <div class="feature-card" data-delay="300">
+        <div class="feature-icon">♻️</div>
+        <h3>Zero Food Waste</h3>
+        <p>Use up leftover ingredients before they go bad. Meal Mapper helps you cook smart and waste nothing.</p>
+      </div>
+      <div class="feature-card" data-delay="400">
+        <div class="feature-icon">⚡</div>
+        <h3>Instant Results</h3>
+        <p>No waiting, no loading screens. Get recipe suggestions the moment you type your ingredients.</p>
+      </div>
+      <div class="feature-card" data-delay="500">
+        <div class="feature-icon">🤖</div>
+        <h3>Smart Matching</h3>
+        <p>Our algorithm finds both full and partial matches — so even if you're missing one ingredient, we still suggest recipes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECIPE CARDS -->
+  <section class="recipes" id="recipes">
+    <div class="section-label">— Quick Recipes</div>
+    <h2 class="section-title">Start Cooking <em>Tonight</em></h2>
+    <div class="recipes-grid">
+      <div class="recipe-card">
+        <div class="recipe-emoji">🍝</div>
+        <div class="recipe-info">
+          <span class="recipe-tag">Italian</span>
+          <h3>Garlic Pasta</h3>
+          <p>Pasta, garlic, olive oil, chilli — four things that make magic in just 15 minutes.</p>
+          <div class="recipe-meta">
+            <span>⏱ 15 min</span>
+            <span>👤 2 servings</span>
+            <span>⭐ Easy</span>
+          </div>
+        </div>
+      </div>
+      <div class="recipe-card featured">
+        <div class="recipe-emoji">🍛</div>
+        <div class="recipe-info">
+          <span class="recipe-tag">Indian</span>
+          <h3>Dal Tadka</h3>
+          <p>Lentils bloomed with tempered spices — a simple comfort dish with extraordinary depth.</p>
+          <div class="recipe-meta">
+            <span>⏱ 30 min</span>
+            <span>👤 4 servings</span>
+            <span>⭐ Easy</span>
+          </div>
+        </div>
+      </div>
+      <div class="recipe-card">
+        <div class="recipe-emoji">🍔</div>
+        <div class="recipe-info">
+          <span class="recipe-tag">Snack</span>
+          <h3>Veg Burger</h3>
+          <p>Crispy patty, fresh veggies, melted cheese — the ultimate quick snack fix.</p>
+          <div class="recipe-meta">
+            <span>⏱ 20 min</span>
+            <span>👤 2 servings</span>
+            <span>⭐ Easy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ADD RECIPE -->
+<section class="add-recipe" id="add-recipe">
+  <div class="section-label">— Contribute</div>
+  <h2 class="section-title">Add Your <em>Recipe</em></h2>
+  <div class="add-recipe-form">
+
+    <div class="form-group">
+      <label>Recipe Name</label>
+      <input type="text" id="recipeName" placeholder="e.g. Masala Maggi"/>
+    </div>
+
+    <div class="form-group">
+      <label>Ingredients <span>(one per line)</span></label>
+      <textarea id="recipeIngredients" rows="5" 
+        placeholder="egg&#10;onion&#10;tomato&#10;salt"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Steps <span>(one per line)</span></label>
+      <textarea id="recipeSteps" rows="6" 
+        placeholder="Boil water.&#10;Add noodles.&#10;Add masala.&#10;Serve hot."></textarea>
+    </div>
+
+    <button class="btn-submit" id="submitRecipe">Add Recipe 🍽️</button>
+    <div class="form-message" id="formMessage"></div>
+
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">🗺️ Meal Mapper</div>
+        <p>A smart recipe finder built as a college micro project. Type your ingredients, discover your next meal.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#add-recipe">Add Recipe</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Made with ❤️ for college</p>
+        <p>Pune, Maharashtra</p>
+        <div class="footer-socials">
+          <span>📧</span>
+          <span>📸</span>
+          <span>🐦</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Meal Mapper — College Micro Project. Built with HTML, CSS & JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

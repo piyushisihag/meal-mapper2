@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meal Mapper — AI Chef Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    /* ── RESET & BASE ─────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+  --bg:          #f8f6f1;   /* main background like index */
+  --sidebar-bg:  #ffffff;
+  --surface:     #ffffff;
+  --border:      #e5e2da;
+  --accent:      #c9a84c;
+  --accent-dim:  #8a6e2f;
+  --cream:       #1a1814;
+  --muted:       #6b6456;
+  --text:        #2a2720;
+  --sidebar-w:   270px;
+}
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    /* ── LAYOUT ───────────────────────────────────── */
+    .layout {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    /* ── SIDEBAR ──────────────────────────────────── */
+    .sidebar {
+      width: var(--sidebar-w);
+      min-width: var(--sidebar-w);
+      background: var(--sidebar-bg);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      position: relative;
+      z-index: 10;
+      overflow: hidden;
+    }
+
+    /* subtle noise texture on sidebar */
+    .sidebar::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    /* logo bar */
+    .sidebar-logo {
+      padding: 22px 20px 18px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .sidebar-logo .logo-icon {
+      font-size: 22px;
+      line-height: 1;
+    }
+    .sidebar-logo .logo-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--cream);
+      letter-spacing: 0.02em;
+    }
+    .sidebar-logo .logo-text em {
+      color: var(--accent);
+      font-style: italic;
+    }
+
+    /* new chat button */
+    .new-chat-btn {
+      margin: 16px 14px 8px;
+      padding: 10px 14px;
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      letter-spacing: 0.02em;
+    }
+    .new-chat-btn:hover {
+      background: var(--surface);
+      border-color: var(--accent-dim);
+      color: var(--accent);
+    }
+    .new-chat-btn .plus {
+      font-size: 16px;
+      line-height: 1;
+      color: var(--accent);
+    }
+
+    /* history section */
+    .sidebar-section {
+      padding: 16px 14px 6px;
+    }
+    .sidebar-section-label {
+      font-size: 10px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 8px;
+      padding: 0 6px;
+    }
+
+    .history-item {
+      padding: 9px 10px;
+      border-radius: 7px;
+      font-size: 12.5px;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.18s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .history-item:hover {
+      background: var(--surface);
+      color: var(--text);
+    }
+    .history-item.active {
+      background: var(--surface);
+      color: var(--cream);
+    }
+    .history-item .h-icon { font-size: 13px; flex-shrink: 0; }
+
+    /* divider */
+    .sidebar-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 12px 14px;
+    }
+
+    /* cuisine quick-starters */
+    .starters-label {
+      font-size: 10px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      padding: 0 20px;
+      margin-bottom: 10px;
+    }
+    .starters-list {
+      padding: 0 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .starter-chip {
+      padding: 8px 10px;
+      border-radius: 7px;
+      font-size: 12px;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.18s ease;
+    }
+    .starter-chip:hover {
+      background: var(--surface);
+      color: var(--accent);
+    }
+    .starter-chip .chip-emoji { font-size: 14px; }
+
+    /* sidebar bottom */
+    .sidebar-bottom {
+      margin-top: auto;
+      padding: 14px;
+      border-top: 1px solid var(--border);
+    }
+    .back-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 10px;
+      border-radius: 7px;
+      font-size: 12.5px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: all 0.18s ease;
+    }
+    .back-link:hover {
+      background: var(--surface);
+      color: var(--text);
+    }
+    .model-tag {
+      margin-top: 6px;
+      padding: 6px 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .model-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 6px var(--accent);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    /* ── MAIN CHAT AREA ───────────────────────────── */
+    .chat-main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    /* top bar */
+    .chat-topbar {
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg);
+      flex-shrink: 0;
+    }
+    .chat-topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .chat-model-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--cream);
+    }
+    .chat-model-name em { color: var(--accent); font-style: italic; }
+    .chat-status {
+      font-size: 11px;
+      color: var(--muted);
+      padding: 3px 10px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+    }
+    .chat-topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .topbar-btn {
+      padding: 7px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+    }
+    .topbar-btn:hover {
+      background: var(--surface);
+      color: var(--text);
+      border-color: var(--accent-dim);
+    }
+
+    /* ── BOTPRESS WIDGET OVERRIDE ─────────────────── */
+    /* Force the Botpress widget to fill the chat-main area */
+    #bp-web-widget-container {
+      position: fixed !important;
+      top: 0 !important;
+      left: var(--sidebar-w) !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      width: calc(100vw - var(--sidebar-w)) !important;
+      height: 100vh !important;
+      z-index: 50 !important;
+      display: flex !important;
+      align-items: stretch !important;
+      justify-content: stretch !important;
+    }
+
+    /* The chat iframe/panel itself */
+    #bp-web-widget {
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      min-height: 100% !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      border: none !important;
+    }
+
+    /* Hide the floating bubble trigger button */
+    .bpw-floating-button,
+    [class*="floating-button"],
+    [class*="chat-button"] {
+      display: none !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+
+    /* ── WELCOME SCREEN (shown before bot loads) ──── */
+    .welcome-screen {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .welcome-glow {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 300px;
+      background: radial-gradient(ellipse, rgba(201,168,76,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .welcome-icon {
+      font-size: 52px;
+      margin-bottom: 20px;
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .welcome-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 38px;
+      font-weight: 300;
+      color: var(--cream);
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+    .welcome-title em {
+      color: var(--accent);
+      font-style: italic;
+    }
+
+    .welcome-sub {
+      font-size: 14px;
+      color: var(--muted);
+      text-align: center;
+      max-width: 420px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .welcome-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      max-width: 620px;
+      width: 100%;
+    }
+
+    .welcome-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 14px;
+      cursor: pointer;
+      transition: all 0.22s ease;
+      text-align: left;
+    }
+    .welcome-card:hover {
+      border-color: var(--accent-dim);
+      background: #1f1c16;
+      transform: translateY(-2px);
+    }
+    .welcome-card .wc-icon {
+      font-size: 20px;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .welcome-card .wc-title {
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .welcome-card .wc-sub {
+      font-size: 11.5px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ── LOADING DOTS ─────────────────────────────── */
+    .loading-indicator {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateX(calc(var(--sidebar-w) / 2));
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      font-size: 12px;
+      color: var(--muted);
+      z-index: 200;
+      animation: fadeIn 0.3s ease;
+    }
+    .loading-indicator.hidden { display: none; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateX(-50%) translateX(calc(var(--sidebar-w)/2)) translateY(10px); } }
+
+    .dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: bounce 1.2s infinite;
+    }
+    .dot:nth-child(2) { animation-delay: 0.2s; }
+    .dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes bounce {
+      0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+      40% { transform: scale(1); opacity: 1; }
+    }
+
+    /* ── MOBILE ───────────────────────────────────── */
+    @media (max-width: 700px) {
+      :root { --sidebar-w: 0px; }
+      .sidebar { display: none; }
+      #bp-web-widget-container {
+        left: 0 !important;
+        width: 100vw !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ── SIDEBAR ────────────────────────────────────── -->
+  <aside class="sidebar">
+
+    <a href="index.html" class="sidebar-logo">
+      <span class="logo-icon">🗺️</span>
+      <span class="logo-text">Meal <em>Mapper</em></span>
+    </a>
+
+    <button class="new-chat-btn" onclick="reloadChat()">
+      <span class="plus">＋</span>
+      New Conversation
+    </button>
+
+    <div class="sidebar-divider"></div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Recent</div>
+      <div class="history-item active">
+        <span class="h-icon">🍛</span> What can I make with eggs?
+      </div>
+      <div class="history-item">
+        <span class="h-icon">🧄</span> Substitute for paneer?
+      </div>
+      <div class="history-item">
+        <span class="h-icon">🍝</span> Quick pasta ideas
+      </div>
+    </div>
+
+    <div class="sidebar-divider"></div>
+
+    <div class="starters-label">Try asking</div>
+    <div class="starters-list">
+      <div class="starter-chip">
+        <span class="chip-emoji">🥚</span> Recipes with egg & onion
+      </div>
+      <div class="starter-chip">
+        <span class="chip-emoji">🍚</span> What can I make with rice?
+      </div>
+      <div class="starter-chip">
+        <span class="chip-emoji">🥔</span> Potato snack ideas
+      </div>
+      <div class="starter-chip">
+        <span class="chip-emoji">🌶️</span> Too spicy — how to fix?
+      </div>
+    </div>
+
+    <div class="sidebar-bottom">
+      <a href="index.html" class="back-link">
+        ← Back to Meal Mapper
+      </a>
+      <div class="model-tag">
+        <div class="model-dot"></div>
+        AI Chef Assistant · Online
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ── MAIN ───────────────────────────────────────── -->
+  <main class="chat-main">
+
+    <div class="chat-topbar">
+      <div class="chat-topbar-left">
+        <span class="chat-model-name">Meal Mapper <em>AI</em></span>
+        <span class="chat-status">Cooking Assistant</span>
+      </div>
+      <div class="chat-topbar-right">
+        <button class="topbar-btn" onclick="reloadChat()">↺ New Chat</button>
+      </div>
+    </div>
+
+    <!-- Welcome screen (visible until Botpress loads) -->
+    <div class="welcome-screen" id="welcomeScreen">
+      <div class="welcome-glow"></div>
+      <div class="welcome-icon">🍽️</div>
+      <h1 class="welcome-title">What can I help you<br/><em>cook today?</em></h1>
+      <p class="welcome-sub">Tell me what ingredients you have, ask about a recipe, or get tips on any dish. I'm here to help.</p>
+      <div class="welcome-cards">
+        <div class="welcome-card">
+          <span class="wc-icon">🥘</span>
+          <div class="wc-title">Find Recipes</div>
+          <div class="wc-sub">Type your ingredients and get instant matches</div>
+        </div>
+        <div class="welcome-card">
+          <span class="wc-icon">❓</span>
+          <div class="wc-title">Ask Anything</div>
+          <div class="wc-sub">Cooking tips, timings, substitutes and more</div>
+        </div>
+        <div class="welcome-card">
+          <span class="wc-icon">🔄</span>
+          <div class="wc-title">Substitutes</div>
+          <div class="wc-sub">Missing an ingredient? We'll find an alternative</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- Loading indicator -->
+<div class="loading-indicator" id="loadingDot">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <span>Connecting to AI Chef...</span>
+</div>
+
+<!-- ── BOTPRESS SCRIPTS ───────────────────────────────── -->
+<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/03/07/12/20260307121906-4ZIKV3NR.js" defer></script>
+
+<script>
+  // Auto-open Botpress and hide welcome screen once ready
+  function initChat() {
+    if (window.botpress) {
+      try {
+        window.botpress.open();
+        document.getElementById('welcomeScreen').style.display = 'none';
+        document.getElementById('loadingDot').classList.add('hidden');
+      } catch(e) {
+        setTimeout(initChat, 500);
+      }
+    } else {
+      setTimeout(initChat, 500);
+    }
+  }
+
+  // Hide loading dot once widget container appears
+  const observer = new MutationObserver(() => {
+    const container = document.getElementById('bp-web-widget-container');
+    if (container) {
+      document.getElementById('loadingDot').classList.add('hidden');
+      document.getElementById('welcomeScreen').style.display = 'none';
+      observer.disconnect();
+    }
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+
+  window.addEventListener('load', () => {
+    setTimeout(initChat, 800);
+  });
+
+  function reloadChat() {
+    if (window.botpress) {
+      try {
+        window.botpress.close();
+        setTimeout(() => window.botpress.open(), 300);
+      } catch(e) { location.reload(); }
+    } else {
+      location.reload();
+    }
+  }
+</script>
+
+</body>
+</html>
