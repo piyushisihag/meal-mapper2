@@ -1,0 +1,7 @@
+{
+  "routes": [
+    { "src": "/", "dest": "/api/app" },
+    { "src": "/chat", "dest": "/api/app" },
+    { "src": "/(.*)", "dest": "/api/app" }
+  ]
+}
