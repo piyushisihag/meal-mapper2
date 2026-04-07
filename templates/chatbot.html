@@ -300,29 +300,15 @@
     /* Force the Botpress widget to fill the chat-main area */
     #bp-web-widget-container {
       position: fixed !important;
-      top: 0 !important;
-      left: var(--sidebar-w) !important;
-      right: 0 !important;
-      bottom: 0 !important;
-      width: calc(100vw - var(--sidebar-w)) !important;
-      height: 100vh !important;
-      z-index: 50 !important;
-      display: flex !important;
-      align-items: stretch !important;
-      justify-content: stretch !important;
+      inset: 0 !important;
+      z-index: 999 !important;
     }
 
     /* The chat iframe/panel itself */
     #bp-web-widget {
       width: 100% !important;
       height: 100% !important;
-      max-width: 100% !important;
-      max-height: 100% !important;
-      min-height: 100% !important;
-      border-radius: 0 !important;
-      box-shadow: none !important;
-      border: none !important;
-    }
+    }  
 
     /* Hide the floating bubble trigger button */
     .bpw-floating-button,
@@ -587,7 +573,7 @@
 
 <!-- ── BOTPRESS SCRIPTS ───────────────────────────────── -->
 <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2026/03/07/12/20260307121906-4ZIKV3NR.js" defer></script>
+<script src="https://files.bpcontent.cloud/2026/03/07/12/20260307121906-4ZIKV3NR.js"></script>
 
 <script>
   // Auto-open Botpress and hide welcome screen once ready
