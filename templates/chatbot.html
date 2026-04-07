@@ -578,56 +578,56 @@
     
 
 
-<!-- <script>
+<script>
   window.botpressWebChat = {
     "composerPlaceholder": "Type your message...",
     "botConversationDescription": "Meal Mapper AI",
     "showPoweredBy": false
   };
-  // // Auto-open Botpress and hide welcome screen once ready
-  // function initChat() {
-  //   if (window.botpress) {
-  //     try {
-  //       window.botpress.open();
-  //       document.getElementById('welcomeScreen').style.display = 'none';
-  //       document.getElementById('loadingDot').classList.add('hidden');
-  //     } catch(e) {
-  //       setTimeout(initChat, 500);
-  //     }
-  //   } else {
-  //     setTimeout(initChat, 500);
-  //   }
-  // }
+  // Auto-open Botpress and hide welcome screen once ready
+  function initChat() {
+    if (window.botpress) {
+      try {
+        window.botpress.open();
+        document.getElementById('welcomeScreen').style.display = 'none';
+        document.getElementById('loadingDot').classList.add('hidden');
+      } catch(e) {
+        setTimeout(initChat, 500);
+      }
+    } else {
+      setTimeout(initChat, 500);
+    }
+  }
 
-  // // Hide loading dot once widget container appears
-  // const observer = new MutationObserver(() => {
-  //   const container = document.getElementById('bp-web-widget-container');
-  //   if (container) {
-  //     document.getElementById('loadingDot').classList.add('hidden');
-  //     document.getElementById('welcomeScreen').style.display = 'none';
-  //     observer.disconnect();
-  //   }
-  // });
-  // observer.observe(document.body, { childList: true, subtree: true });
+  // Hide loading dot once widget container appears
+  const observer = new MutationObserver(() => {
+    const container = document.getElementById('bp-web-widget-container');
+    if (container) {
+      document.getElementById('loadingDot').classList.add('hidden');
+      document.getElementById('welcomeScreen').style.display = 'none';
+      observer.disconnect();
+    }
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
 
-  // window.addEventListener('load', () => {
-  //   setTimeout(initChat, 800);
-  // });
+  window.addEventListener('load', () => {
+    setTimeout(initChat, 800);
+  });
 
-  // function reloadChat() {
-  //   if (window.botpress) {
-  //     try {
-  //       window.botpress.close();
-  //       setTimeout(() => window.botpress.open(), 300);
-  //     } catch(e) { location.reload(); }
-  //   } else {
-  //     location.reload();
-  //   }
-  // }
-</script> -->
+  function reloadChat() {
+    if (window.botpress) {
+      try {
+        window.botpress.close();
+        setTimeout(() => window.botpress.open(), 300);
+      } catch(e) { location.reload(); }
+    } else {
+      location.reload();
+    }
+  }
+</script>
 
 
-<script>
+<!-- <script>
   window.botpressWebChat = {
     composerPlaceholder: "Type your message...",
     botConversationDescription: "Meal Mapper AI",
@@ -669,7 +669,7 @@
   function reloadChat() {
     location.reload();
   }
-</script>
+</script> -->
 
 </body>
 </html>
