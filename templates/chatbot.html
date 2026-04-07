@@ -576,46 +576,55 @@
 <script src="https://files.bpcontent.cloud/2026/03/07/12/20260307121906-4ZIKV3NR.js"></script>
 
 <script>
-  // Auto-open Botpress and hide welcome screen once ready
-  function initChat() {
-    if (window.botpress) {
-      try {
-        window.botpress.open();
-        document.getElementById('welcomeScreen').style.display = 'none';
-        document.getElementById('loadingDot').classList.add('hidden');
-      } catch(e) {
-        setTimeout(initChat, 500);
-      }
-    } else {
-      setTimeout(initChat, 500);
-    }
-  }
+  <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/03/07/12/20260307121906-4ZIKV3NR.js"></script>
 
-  // Hide loading dot once widget container appears
-  const observer = new MutationObserver(() => {
-    const container = document.getElementById('bp-web-widget-container');
-    if (container) {
-      document.getElementById('loadingDot').classList.add('hidden');
-      document.getElementById('welcomeScreen').style.display = 'none';
-      observer.disconnect();
-    }
-  });
-  observer.observe(document.body, { childList: true, subtree: true });
+<script>
+  window.botpressWebChat = {
+    "composerPlaceholder": "Type your message...",
+    "botConversationDescription": "Meal Mapper AI",
+    "showPoweredBy": false
+  };
+  // // Auto-open Botpress and hide welcome screen once ready
+  // function initChat() {
+  //   if (window.botpress) {
+  //     try {
+  //       window.botpress.open();
+  //       document.getElementById('welcomeScreen').style.display = 'none';
+  //       document.getElementById('loadingDot').classList.add('hidden');
+  //     } catch(e) {
+  //       setTimeout(initChat, 500);
+  //     }
+  //   } else {
+  //     setTimeout(initChat, 500);
+  //   }
+  // }
 
-  window.addEventListener('load', () => {
-    setTimeout(initChat, 800);
-  });
+  // // Hide loading dot once widget container appears
+  // const observer = new MutationObserver(() => {
+  //   const container = document.getElementById('bp-web-widget-container');
+  //   if (container) {
+  //     document.getElementById('loadingDot').classList.add('hidden');
+  //     document.getElementById('welcomeScreen').style.display = 'none';
+  //     observer.disconnect();
+  //   }
+  // });
+  // observer.observe(document.body, { childList: true, subtree: true });
 
-  function reloadChat() {
-    if (window.botpress) {
-      try {
-        window.botpress.close();
-        setTimeout(() => window.botpress.open(), 300);
-      } catch(e) { location.reload(); }
-    } else {
-      location.reload();
-    }
-  }
+  // window.addEventListener('load', () => {
+  //   setTimeout(initChat, 800);
+  // });
+
+  // function reloadChat() {
+  //   if (window.botpress) {
+  //     try {
+  //       window.botpress.close();
+  //       setTimeout(() => window.botpress.open(), 300);
+  //     } catch(e) { location.reload(); }
+  //   } else {
+  //     location.reload();
+  //   }
+  // }
 </script>
 
 </body>
