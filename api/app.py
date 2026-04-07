@@ -1,10 +1,14 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import json
 import os
 import re
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder="../templates",
+    static_folder="../static"
+)
 CORS(app)
 
 # ─────────────────────────────────────────
@@ -186,7 +190,11 @@ def get_chat_reply(message):
 # ─────────────────────────────────────────
 @app.route("/", methods=["GET"])
 def home():
-    return jsonify({"message": "🗺️ Meal Mapper API is running!", "status": "ok"})
+    return render_template("index.html")
+
+@app.route("/chat-page")
+def chat_page():
+    return render_template("chatbot.html")
 
 
 # ─────────────────────────────────────────
@@ -352,5 +360,9 @@ def add_recipe():
 # ─────────────────────────────────────────
 #  Run the app
 # ─────────────────────────────────────────
+
+def handler(request):
+    return app(request.environ, lambda *args: None)
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=False)
