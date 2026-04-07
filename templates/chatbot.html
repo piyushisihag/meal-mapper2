@@ -629,10 +629,46 @@
 
 <script>
   window.botpressWebChat = {
-    "composerPlaceholder": "Type your message...",
-    "botConversationDescription": "Meal Mapper AI",
-    "showPoweredBy": false
+    composerPlaceholder: "Type your message...",
+    botConversationDescription: "Meal Mapper AI",
+    showPoweredBy: false
   };
+
+  function waitForBotpress() {
+    if (window.botpress) {
+      window.botpress.open();
+
+      // 🔥 Wait until widget is actually injected
+      const observer = new MutationObserver(() => {
+        const container = document.getElementById('bp-web-widget-container');
+
+        if (container && container.querySelector('iframe')) {
+          // Bot is fully loaded
+
+          document.getElementById('loadingDot').classList.add('hidden');
+          document.getElementById('welcomeScreen').style.display = 'none';
+
+          observer.disconnect();
+        }
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+
+    } else {
+      setTimeout(waitForBotpress, 500);
+    }
+  }
+
+  window.addEventListener('load', () => {
+    waitForBotpress();
+  });
+
+  function reloadChat() {
+    location.reload();
+  }
 </script>
 
 </body>
