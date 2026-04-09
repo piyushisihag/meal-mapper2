@@ -3,7 +3,7 @@
     "recipe_name": "Maggi Masala",
     "type": ["Meal"],
     "cuisine": "Indian",
-    "core_ingredients": ["maggi noodles", "masala packet"],
+    "core_ingredients": ["maggie", "masala packet"],
     "basic_ingredients": ["water", "salt", "oil"],
     "optional_ingredients": ["butter", "onion"],
     "preparation_time": "10 mins",
