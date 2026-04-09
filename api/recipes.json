@@ -1,1472 +1,4287 @@
 [
   {
     "recipe_name": "Maggi Masala",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["maggie", "masala packet"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["butter", "onion"],
+    "core_ingredients": [
+      "maggie",
+      "masala packet"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "onion"
+    ],
     "preparation_time": "10 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["tea", "coffee"],
-    "tags": ["quick"],
-    "suggestions": ["Adjust spices according to your taste.", "Serving fresh will improve the overall flavor."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "tea",
+      "coffee"
+    ],
+    "tags": [
+      "quick"
+    ],
+    "suggestions": [
+      "Adjust spices according to your taste.",
+      "Serving fresh will improve the overall flavor."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Maggi Masala.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Butter Toast",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["bread", "butter"],
-    "basic_ingredients": ["salt"],
-    "optional_ingredients": ["cheese"],
+    "core_ingredients": [
+      "bread",
+      "butter"
+    ],
+    "basic_ingredients": [
+      "salt"
+    ],
+    "optional_ingredients": [
+      "cheese"
+    ],
     "preparation_time": "5 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["tea", "coffee"],
-    "tags": ["quick"],
-    "suggestions": ["Use fresh bread for best results.", "Serve immediately while hot."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "tea",
+      "coffee"
+    ],
+    "tags": [
+      "quick"
+    ],
+    "suggestions": [
+      "Use fresh bread for best results.",
+      "Serve immediately while hot."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Butter Toast.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Aloo Paratha",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["wheat flour", "potato"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["butter", "cumin"],
+    "core_ingredients": [
+      "wheat flour",
+      "potato"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "cumin"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["raita", "tea"],
-    "tags": ["general"],
-    "suggestions": ["Mash potatoes well to avoid lumps.", "Serve hot with butter."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "raita",
+      "tea"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Mash potatoes well to avoid lumps.",
+      "Serve hot with butter."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Aloo Paratha.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Masala Chai",
-    "type": ["Drink"],
+    "type": [
+      "Drink"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["milk", "tea leaves"],
-    "basic_ingredients": ["water", "sugar"],
-    "optional_ingredients": ["ginger", "cardamom"],
+    "core_ingredients": [
+      "milk",
+      "tea leaves"
+    ],
+    "basic_ingredients": [
+      "water",
+      "sugar"
+    ],
+    "optional_ingredients": [
+      "ginger",
+      "cardamom"
+    ],
     "preparation_time": "10 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["biscuits", "toast"],
-    "tags": ["general"],
-    "suggestions": ["Boil on low flame for better flavour.", "Add ginger for extra kick."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "biscuits",
+      "toast"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Boil on low flame for better flavour.",
+      "Add ginger for extra kick."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Masala Chai.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Poha",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["poha"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "lemon", "coriander"],
+    "core_ingredients": [
+      "poha"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "lemon",
+      "coriander"
+    ],
     "preparation_time": "15 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["tea"],
-    "tags": ["general"],
-    "suggestions": ["Rinse poha lightly before cooking.", "Add lemon juice at end for freshness."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "tea"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Rinse poha lightly before cooking.",
+      "Add lemon juice at end for freshness."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Poha.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Upma",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["suji"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "mustard seeds"],
+    "core_ingredients": [
+      "suji"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "mustard seeds"
+    ],
     "preparation_time": "15 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["tea", "coconut chutney"],
-    "tags": ["general"],
-    "suggestions": ["Roast semolina before cooking.", "Add veggies for nutrition."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "tea",
+      "coconut chutney"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Roast semolina before cooking.",
+      "Add veggies for nutrition."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Upma.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Dal Tadka",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["yellow dal", "cumin"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "tomato", "garlic"],
+    "core_ingredients": [
+      "yellow dal",
+      "cumin"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "garlic"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["rice", "roti"],
-    "tags": ["general"],
-    "suggestions": ["Temper with ghee for authentic taste.", "Add lemon juice before serving."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "rice",
+      "roti"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Temper with ghee for authentic taste.",
+      "Add lemon juice before serving."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Dal Tadka.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Khichdi",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["rice", "moong dal"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["cumin", "turmeric"],
+    "core_ingredients": [
+      "rice",
+      "moong dal"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "cumin",
+      "turmeric"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["raita", "papad"],
-    "tags": ["general"],
-    "suggestions": ["Cook until soft and mushy.", "Add ghee on top before serving."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "raita",
+      "papad"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Cook until soft and mushy.",
+      "Add ghee on top before serving."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Khichdi.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Egg Fried Rice",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Chinese",
-    "core_ingredients": ["rice", "egg"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "soy sauce", "spring onion"],
+    "core_ingredients": [
+      "rice",
+      "egg"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "soy sauce",
+      "spring onion"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["manchurian", "soup"],
-    "tags": ["general"],
-    "suggestions": ["Use day-old rice for best texture.", "Cook on high flame."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "manchurian",
+      "soup"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Use day-old rice for best texture.",
+      "Cook on high flame."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Egg Fried Rice.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Chow Mein",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Chinese",
-    "core_ingredients": ["noodles", "cabbage"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["carrot", "onion", "soy sauce"],
+    "core_ingredients": [
+      "noodles",
+      "cabbage"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "carrot",
+      "onion",
+      "soy sauce"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["manchurian", "lemonade"],
-    "tags": ["general"],
-    "suggestions": ["Cook noodles al dente.", "Stir fry on high flame."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "manchurian",
+      "lemonade"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Cook noodles al dente.",
+      "Stir fry on high flame."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Chow Mein.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Veg Burger",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["burger bun", "potato patty"],
-    "basic_ingredients": ["salt", "oil"],
-    "optional_ingredients": ["lettuce", "tomato", "onion", "cheese"],
+    "core_ingredients": [
+      "burger bun",
+      "potato patty"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "lettuce",
+      "tomato",
+      "onion",
+      "cheese"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["french fries", "cold coffee"],
-    "tags": ["fast food"],
-    "suggestions": ["Toast the bun lightly.", "Add sauce generously."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "french fries",
+      "cold coffee"
+    ],
+    "tags": [
+      "fast food"
+    ],
+    "suggestions": [
+      "Toast the bun lightly.",
+      "Add sauce generously."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Veg Burger.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "French Fries",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["potato", "oil"],
-    "basic_ingredients": ["salt"],
-    "optional_ingredients": ["chili flakes", "cheese powder"],
+    "core_ingredients": [
+      "potato",
+      "oil"
+    ],
+    "basic_ingredients": [
+      "salt"
+    ],
+    "optional_ingredients": [
+      "chili flakes",
+      "cheese powder"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["ketchup", "cold coffee"],
-    "tags": ["fast food"],
-    "suggestions": ["Soak potatoes in cold water before frying.", "Fry twice for extra crispiness."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "ketchup",
+      "cold coffee"
+    ],
+    "tags": [
+      "fast food"
+    ],
+    "suggestions": [
+      "Soak potatoes in cold water before frying.",
+      "Fry twice for extra crispiness."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for French Fries.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Pasta Arrabbiata",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Italian",
-    "core_ingredients": ["pasta", "tomato"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["garlic", "basil", "chili flakes"],
+    "core_ingredients": [
+      "pasta",
+      "tomato"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "garlic",
+      "basil",
+      "chili flakes"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["garlic bread", "juice"],
-    "tags": ["general"],
-    "suggestions": ["Cook pasta al dente.", "Use fresh tomatoes for best flavor."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "garlic bread",
+      "juice"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Cook pasta al dente.",
+      "Use fresh tomatoes for best flavor."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Pasta Arrabbiata.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Pizza",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Italian",
-    "core_ingredients": ["pizza base", "cheese"],
-    "basic_ingredients": ["salt", "oil"],
-    "optional_ingredients": ["capsicum", "onion", "oregano", "tomato sauce"],
+    "core_ingredients": [
+      "pizza base",
+      "cheese"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "capsicum",
+      "onion",
+      "oregano",
+      "tomato sauce"
+    ],
     "preparation_time": "30 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["cold coffee", "lemonade"],
-    "tags": ["fast food"],
-    "suggestions": ["Preheat oven properly.", "Don't overload toppings."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "cold coffee",
+      "lemonade"
+    ],
+    "tags": [
+      "fast food"
+    ],
+    "suggestions": [
+      "Preheat oven properly.",
+      "Don't overload toppings."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Pizza.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Garlic Bread",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Italian",
-    "core_ingredients": ["bread", "garlic", "butter"],
-    "basic_ingredients": ["salt"],
-    "optional_ingredients": ["parsley", "cheese"],
+    "core_ingredients": [
+      "bread",
+      "garlic",
+      "butter"
+    ],
+    "basic_ingredients": [
+      "salt"
+    ],
+    "optional_ingredients": [
+      "parsley",
+      "cheese"
+    ],
     "preparation_time": "10 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["tomato soup", "pasta"],
-    "tags": ["general"],
-    "suggestions": ["Toast until golden brown.", "Use fresh garlic for best flavor."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "tomato soup",
+      "pasta"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Toast until golden brown.",
+      "Use fresh garlic for best flavor."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Garlic Bread.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Tomato Soup",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["tomato"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "garlic", "cream"],
+    "core_ingredients": [
+      "tomato"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "garlic",
+      "cream"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["garlic bread", "toast"],
-    "tags": ["general"],
-    "suggestions": ["Blend well for smooth texture.", "Add cream before serving."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "garlic bread",
+      "toast"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Blend well for smooth texture.",
+      "Add cream before serving."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Tomato Soup.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Samosa",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["flour", "potato"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["peas", "cumin", "ginger"],
+    "core_ingredients": [
+      "flour",
+      "potato"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "peas",
+      "cumin",
+      "ginger"
+    ],
     "preparation_time": "40 mins",
     "difficulty_level": "Hard",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["green chutney", "tea"],
-    "tags": ["street food"],
-    "suggestions": ["Fry on medium flame.", "Seal edges properly."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "green chutney",
+      "tea"
+    ],
+    "tags": [
+      "street food"
+    ],
+    "suggestions": [
+      "Fry on medium flame.",
+      "Seal edges properly."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Samosa.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Pav Bhaji",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["potato", "pav bhaji masala", "pav"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["tomato", "onion", "capsicum", "butter"],
+    "core_ingredients": [
+      "potato",
+      "pav bhaji masala",
+      "pav"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "onion",
+      "capsicum",
+      "butter"
+    ],
     "preparation_time": "30 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["buttermilk", "lemonade"],
-    "tags": ["street food"],
-    "suggestions": ["Mash vegetables well.", "Add butter generously."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "buttermilk",
+      "lemonade"
+    ],
+    "tags": [
+      "street food"
+    ],
+    "suggestions": [
+      "Mash vegetables well.",
+      "Add butter generously."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Pav Bhaji.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Vada Pav",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["potato", "pav"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["garlic chutney", "tamarind chutney"],
+    "core_ingredients": [
+      "potato",
+      "pav"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "garlic chutney",
+      "tamarind chutney"
+    ],
     "preparation_time": "30 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["tea", "green chutney"],
-    "tags": ["street food"],
-    "suggestions": ["Fry vada until golden.", "Serve with dry garlic chutney."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "tea",
+      "green chutney"
+    ],
+    "tags": [
+      "street food"
+    ],
+    "suggestions": [
+      "Fry vada until golden.",
+      "Serve with dry garlic chutney."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Vada Pav.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Chole Bhature",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["chickpeas", "flour"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "tomato", "yogurt"],
+    "core_ingredients": [
+      "chickpeas",
+      "flour"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "yogurt"
+    ],
     "preparation_time": "40 mins",
     "difficulty_level": "Hard",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["lassi", "tea"],
-    "tags": ["general"],
-    "suggestions": ["Soak chickpeas overnight.", "Fry bhature in hot oil."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "lassi",
+      "tea"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Soak chickpeas overnight.",
+      "Fry bhature in hot oil."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Chole Bhature.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Rajma Chawal",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["rajma", "rice"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "tomato", "garlic"],
+    "core_ingredients": [
+      "rajma",
+      "rice"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "garlic"
+    ],
     "preparation_time": "40 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["raita", "papad"],
-    "tags": ["general"],
-    "suggestions": ["Soak rajma overnight.", "Cook until soft."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "raita",
+      "papad"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Soak rajma overnight.",
+      "Cook until soft."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Rajma Chawal.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Idli Sambar",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["idli rice", "urad dal"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["coconut chutney", "sambar powder"],
+    "core_ingredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "coconut chutney",
+      "sambar powder"
+    ],
     "preparation_time": "30 mins",
     "difficulty_level": "Hard",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["coconut chutney", "filter coffee"],
-    "tags": ["general"],
-    "suggestions": ["Ferment batter overnight.", "Steam idli for 10-12 mins."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "coconut chutney",
+      "filter coffee"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Ferment batter overnight.",
+      "Steam idli for 10-12 mins."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Idli Sambar.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Masala Dosa",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["rice", "urad dal", "potato"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "mustard seeds"],
+    "core_ingredients": [
+      "rice",
+      "urad dal",
+      "potato"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "mustard seeds"
+    ],
     "preparation_time": "30 mins",
     "difficulty_level": "Hard",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["sambar", "coconut chutney"],
-    "tags": ["general"],
-    "suggestions": ["Spread dosa thin for crispiness.", "Use cast iron pan."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "sambar",
+      "coconut chutney"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Spread dosa thin for crispiness.",
+      "Use cast iron pan."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Masala Dosa.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Paneer Tikka",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["paneer", "tandoori masala"],
-    "basic_ingredients": ["salt", "oil"],
-    "optional_ingredients": ["yogurt", "capsicum", "onion", "lemon"],
+    "core_ingredients": [
+      "paneer",
+      "tandoori masala"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "yogurt",
+      "capsicum",
+      "onion",
+      "lemon"
+    ],
     "preparation_time": "30 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["green chutney", "lemonade"],
-    "tags": ["general"],
-    "suggestions": ["Marinate for at least 2 hours.", "Grill on high heat."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "green chutney",
+      "lemonade"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Marinate for at least 2 hours.",
+      "Grill on high heat."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Paneer Tikka.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Palak Paneer",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["spinach", "paneer"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "garlic", "cream"],
+    "core_ingredients": [
+      "spinach",
+      "paneer"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "garlic",
+      "cream"
+    ],
     "preparation_time": "25 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["roti", "naan"],
-    "tags": ["general"],
-    "suggestions": ["Blanch spinach before blending.", "Don't overcook spinach."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "roti",
+      "naan"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Blanch spinach before blending.",
+      "Don't overcook spinach."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Palak Paneer.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Butter Chicken",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["chicken", "tomato"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["butter", "cream", "onion", "garlic"],
+    "core_ingredients": [
+      "chicken",
+      "tomato"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "cream",
+      "onion",
+      "garlic"
+    ],
     "preparation_time": "40 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["naan", "rice"],
-    "tags": ["general"],
-    "suggestions": ["Marinate chicken overnight.", "Use kasuri methi for authentic taste."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "naan",
+      "rice"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Marinate chicken overnight.",
+      "Use kasuri methi for authentic taste."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Butter Chicken.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Chicken Biryani",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["basmati rice", "chicken"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "yogurt", "saffron", "mint"],
+    "core_ingredients": [
+      "basmati rice",
+      "chicken"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "yogurt",
+      "saffron",
+      "mint"
+    ],
     "preparation_time": "60 mins",
     "difficulty_level": "Hard",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["raita", "salad"],
-    "tags": ["general"],
-    "suggestions": ["Use long grain basmati rice.", "Dum cook for best flavor."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "raita",
+      "salad"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Use long grain basmati rice.",
+      "Dum cook for best flavor."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Chicken Biryani.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Momo",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Tibetan",
-    "core_ingredients": ["flour", "cabbage"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "ginger", "garlic"],
+    "core_ingredients": [
+      "flour",
+      "cabbage"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "ginger",
+      "garlic"
+    ],
     "preparation_time": "40 mins",
     "difficulty_level": "Hard",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["schezwan chutney", "tea"],
-    "tags": ["general"],
-    "suggestions": ["Seal momos properly.", "Steam for 12-15 mins."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "schezwan chutney",
+      "tea"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Seal momos properly.",
+      "Steam for 12-15 mins."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Momo.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Bread Pakora",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["bread", "besan"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["potato", "green chutney"],
+    "core_ingredients": [
+      "bread",
+      "besan"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "potato",
+      "green chutney"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["green chutney", "tea"],
-    "tags": ["general"],
-    "suggestions": ["Make batter of right consistency.", "Fry on medium flame."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "green chutney",
+      "tea"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Make batter of right consistency.",
+      "Fry on medium flame."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Bread Pakora.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Aloo Chaat",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["potato", "sev"],
-    "basic_ingredients": ["salt", "oil"],
-    "optional_ingredients": ["tamarind chutney", "green chutney", "onion"],
+    "core_ingredients": [
+      "potato",
+      "sev"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "tamarind chutney",
+      "green chutney",
+      "onion"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["tea", "lemonade"],
-    "tags": ["street food"],
-    "suggestions": ["Fry potatoes until crispy.", "Add chutneys generously."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "tea",
+      "lemonade"
+    ],
+    "tags": [
+      "street food"
+    ],
+    "suggestions": [
+      "Fry potatoes until crispy.",
+      "Add chutneys generously."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Aloo Chaat.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Bhel Puri",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["puffed rice", "sev"],
-    "basic_ingredients": ["salt"],
-    "optional_ingredients": ["onion", "tomato", "tamarind chutney", "green chutney"],
+    "core_ingredients": [
+      "puffed rice",
+      "sev"
+    ],
+    "basic_ingredients": [
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "tamarind chutney",
+      "green chutney"
+    ],
     "preparation_time": "10 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["lemonade", "tea"],
-    "tags": ["street food"],
-    "suggestions": ["Mix just before serving.", "Add chutneys to taste."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "lemonade",
+      "tea"
+    ],
+    "tags": [
+      "street food"
+    ],
+    "suggestions": [
+      "Mix just before serving.",
+      "Add chutneys to taste."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Bhel Puri.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Pani Puri",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["puri", "potato", "tamarind"],
-    "basic_ingredients": ["water", "salt"],
-    "optional_ingredients": ["chickpeas", "mint", "chaat masala"],
+    "core_ingredients": [
+      "puri",
+      "potato",
+      "tamarind"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "chickpeas",
+      "mint",
+      "chaat masala"
+    ],
     "preparation_time": "30 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["lemonade"],
-    "tags": ["street food"],
-    "suggestions": ["Make pani very cold.", "Serve immediately."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "lemonade"
+    ],
+    "tags": [
+      "street food"
+    ],
+    "suggestions": [
+      "Make pani very cold.",
+      "Serve immediately."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Pani Puri.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Gajar Halwa",
-    "type": ["Dessert"],
+    "type": [
+      "Dessert"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["gajar", "milk"],
-    "basic_ingredients": ["sugar", "ghee"],
-    "optional_ingredients": ["cashew", "raisin", "cardamom"],
+    "core_ingredients": [
+      "gajar",
+      "milk"
+    ],
+    "basic_ingredients": [
+      "sugar",
+      "ghee"
+    ],
+    "optional_ingredients": [
+      "cashew",
+      "raisin",
+      "cardamom"
+    ],
     "preparation_time": "40 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["ice cream", "tea"],
-    "tags": ["dessert"],
-    "suggestions": ["Grate carrots finely.", "Cook on low flame for best taste."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "ice cream",
+      "tea"
+    ],
+    "tags": [
+      "dessert"
+    ],
+    "suggestions": [
+      "Grate carrots finely.",
+      "Cook on low flame for best taste."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Gajar Halwa.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Kheer",
-    "type": ["Dessert"],
+    "type": [
+      "Dessert"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["rice", "milk"],
-    "basic_ingredients": ["sugar"],
-    "optional_ingredients": ["cashew", "raisin", "saffron", "cardamom"],
+    "core_ingredients": [
+      "rice",
+      "milk"
+    ],
+    "basic_ingredients": [
+      "sugar"
+    ],
+    "optional_ingredients": [
+      "cashew",
+      "raisin",
+      "saffron",
+      "cardamom"
+    ],
     "preparation_time": "40 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["puri", "tea"],
-    "tags": ["dessert"],
-    "suggestions": ["Stir continuously on low flame.", "Add dry fruits at end."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "puri",
+      "tea"
+    ],
+    "tags": [
+      "dessert"
+    ],
+    "suggestions": [
+      "Stir continuously on low flame.",
+      "Add dry fruits at end."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Kheer.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Haldi Doodh",
-    "type": ["Drink"],
+    "type": [
+      "Drink"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["haldi", "milk"],
-    "basic_ingredients": ["sugar"],
-    "optional_ingredients": ["ginger", "honey", "black pepper"],
+    "core_ingredients": [
+      "haldi",
+      "milk"
+    ],
+    "basic_ingredients": [
+      "sugar"
+    ],
+    "optional_ingredients": [
+      "ginger",
+      "honey",
+      "black pepper"
+    ],
     "preparation_time": "5 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["biscuits"],
-    "tags": ["healthy"],
-    "suggestions": ["Add a pinch of black pepper to activate turmeric.", "Best had warm before bed."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "biscuits"
+    ],
+    "tags": [
+      "healthy"
+    ],
+    "suggestions": [
+      "Add a pinch of black pepper to activate turmeric.",
+      "Best had warm before bed."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Haldi Doodh.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Gulab Jamun",
-    "type": ["Dessert"],
+    "type": [
+      "Dessert"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["milk powder", "flour"],
-    "basic_ingredients": ["water", "sugar", "oil"],
-    "optional_ingredients": ["cardamom", "rose water"],
+    "core_ingredients": [
+      "milk powder",
+      "flour"
+    ],
+    "basic_ingredients": [
+      "water",
+      "sugar",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "cardamom",
+      "rose water"
+    ],
     "preparation_time": "40 mins",
     "difficulty_level": "Hard",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["ice cream", "tea"],
-    "tags": ["dessert"],
-    "suggestions": ["Fry on low flame.", "Soak in warm sugar syrup."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "ice cream",
+      "tea"
+    ],
+    "tags": [
+      "dessert"
+    ],
+    "suggestions": [
+      "Fry on low flame.",
+      "Soak in warm sugar syrup."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Gulab Jamun.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Jalebi",
-    "type": ["Dessert"],
+    "type": [
+      "Dessert"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["flour", "yogurt"],
-    "basic_ingredients": ["water", "sugar", "oil"],
-    "optional_ingredients": ["saffron", "cardamom"],
+    "core_ingredients": [
+      "flour",
+      "yogurt"
+    ],
+    "basic_ingredients": [
+      "water",
+      "sugar",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "saffron",
+      "cardamom"
+    ],
     "preparation_time": "40 mins",
     "difficulty_level": "Hard",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["rabri", "tea"],
-    "tags": ["dessert"],
-    "suggestions": ["Ferment batter for 8 hours.", "Dip in hot sugar syrup immediately."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "rabri",
+      "tea"
+    ],
+    "tags": [
+      "dessert"
+    ],
+    "suggestions": [
+      "Ferment batter for 8 hours.",
+      "Dip in hot sugar syrup immediately."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Jalebi.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Cold Coffee",
-    "type": ["Drink"],
+    "type": [
+      "Drink"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["milk", "coffee"],
-    "basic_ingredients": ["sugar", "ice"],
-    "optional_ingredients": ["ice cream", "chocolate sauce"],
+    "core_ingredients": [
+      "milk",
+      "coffee"
+    ],
+    "basic_ingredients": [
+      "sugar",
+      "ice"
+    ],
+    "optional_ingredients": [
+      "ice cream",
+      "chocolate sauce"
+    ],
     "preparation_time": "5 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["burger", "snacks"],
-    "tags": ["general"],
-    "suggestions": ["Blend well for frothy texture.", "Add ice cream for richness."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "burger",
+      "snacks"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Blend well for frothy texture.",
+      "Add ice cream for richness."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Cold Coffee.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Mango Lassi",
-    "type": ["Drink"],
+    "type": [
+      "Drink"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["mango", "yogurt"],
-    "basic_ingredients": ["sugar"],
-    "optional_ingredients": ["milk", "cardamom"],
+    "core_ingredients": [
+      "mango",
+      "yogurt"
+    ],
+    "basic_ingredients": [
+      "sugar"
+    ],
+    "optional_ingredients": [
+      "milk",
+      "cardamom"
+    ],
     "preparation_time": "5 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["paratha", "biryani"],
-    "tags": ["general"],
-    "suggestions": ["Use ripe alphonso mangoes.", "Chill before serving."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "paratha",
+      "biryani"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Use ripe alphonso mangoes.",
+      "Chill before serving."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Mango Lassi.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Banana Shake",
-    "type": ["Drink"],
+    "type": [
+      "Drink"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["banana", "milk"],
-    "basic_ingredients": ["sugar"],
-    "optional_ingredients": ["honey", "almond"],
+    "core_ingredients": [
+      "banana",
+      "milk"
+    ],
+    "basic_ingredients": [
+      "sugar"
+    ],
+    "optional_ingredients": [
+      "honey",
+      "almond"
+    ],
     "preparation_time": "5 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["toast", "biscuits"],
-    "tags": ["general"],
-    "suggestions": ["Use ripe bananas.", "Blend until smooth."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "toast",
+      "biscuits"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Use ripe bananas.",
+      "Blend until smooth."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Banana Shake.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Lemonade",
-    "type": ["Drink"],
+    "type": [
+      "Drink"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["lemon", "sugar"],
-    "basic_ingredients": ["water", "salt"],
-    "optional_ingredients": ["mint", "ginger"],
+    "core_ingredients": [
+      "lemon",
+      "sugar"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "mint",
+      "ginger"
+    ],
     "preparation_time": "5 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["snacks", "burger"],
-    "tags": ["general"],
-    "suggestions": ["Use fresh lemons.", "Add black salt for extra flavor."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "snacks",
+      "burger"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Use fresh lemons.",
+      "Add black salt for extra flavor."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Lemonade.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Nimbu Pani",
-    "type": ["Drink"],
+    "type": [
+      "Drink"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["lemon", "black salt"],
-    "basic_ingredients": ["water", "sugar"],
-    "optional_ingredients": ["mint", "cumin powder"],
+    "core_ingredients": [
+      "lemon",
+      "black salt"
+    ],
+    "basic_ingredients": [
+      "water",
+      "sugar"
+    ],
+    "optional_ingredients": [
+      "mint",
+      "cumin powder"
+    ],
     "preparation_time": "5 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["snacks"],
-    "tags": ["general"],
-    "suggestions": ["Serve chilled.", "Add roasted cumin for better taste."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "snacks"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Serve chilled.",
+      "Add roasted cumin for better taste."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Nimbu Pani.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Pancake",
-    "type": ["Breakfast"],
+    "type": [
+      "Breakfast"
+    ],
     "cuisine": "Western",
-    "core_ingredients": ["flour", "egg", "milk"],
-    "basic_ingredients": ["water", "salt", "oil", "sugar"],
-    "optional_ingredients": ["butter", "vanilla", "honey"],
+    "core_ingredients": [
+      "flour",
+      "egg",
+      "milk"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil",
+      "sugar"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "vanilla",
+      "honey"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["maple syrup", "coffee"],
-    "tags": ["general"],
-    "suggestions": ["Don't overmix batter.", "Cook on medium flame."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "maple syrup",
+      "coffee"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Don't overmix batter.",
+      "Cook on medium flame."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Pancake.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "French Toast",
-    "type": ["Breakfast"],
+    "type": [
+      "Breakfast"
+    ],
     "cuisine": "Western",
-    "core_ingredients": ["bread", "egg", "milk"],
-    "basic_ingredients": ["salt", "oil", "sugar"],
-    "optional_ingredients": ["butter", "vanilla", "cinnamon"],
+    "core_ingredients": [
+      "bread",
+      "egg",
+      "milk"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "oil",
+      "sugar"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "vanilla",
+      "cinnamon"
+    ],
     "preparation_time": "10 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["tea", "coffee"],
-    "tags": ["quick"],
-    "suggestions": ["Dip bread thoroughly.", "Cook until golden brown."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "tea",
+      "coffee"
+    ],
+    "tags": [
+      "quick"
+    ],
+    "suggestions": [
+      "Dip bread thoroughly.",
+      "Cook until golden brown."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for French Toast.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Omelette",
-    "type": ["Breakfast"],
+    "type": [
+      "Breakfast"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["egg"],
-    "basic_ingredients": ["salt", "oil"],
-    "optional_ingredients": ["onion", "tomato", "cheese"],
+    "core_ingredients": [
+      "egg"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "cheese"
+    ],
     "preparation_time": "10 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["toast", "tea"],
-    "tags": ["quick"],
-    "suggestions": ["Beat eggs well.", "Cook on medium flame."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "toast",
+      "tea"
+    ],
+    "tags": [
+      "quick"
+    ],
+    "suggestions": [
+      "Beat eggs well.",
+      "Cook on medium flame."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Omelette.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Egg Bhurji",
-    "type": ["Breakfast"],
+    "type": [
+      "Breakfast"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["egg", "onion", "tomato"],
-    "basic_ingredients": ["salt", "oil"],
-    "optional_ingredients": ["coriander", "green chili", "capsicum"],
+    "core_ingredients": [
+      "egg",
+      "onion",
+      "tomato"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "coriander",
+      "green chili",
+      "capsicum"
+    ],
     "preparation_time": "10 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["toast", "roti"],
-    "tags": ["quick"],
-    "suggestions": ["Scramble on low flame.", "Add coriander at end."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "toast",
+      "roti"
+    ],
+    "tags": [
+      "quick"
+    ],
+    "suggestions": [
+      "Scramble on low flame.",
+      "Add coriander at end."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Egg Bhurji.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Paneer Sandwich",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["bread", "paneer"],
-    "basic_ingredients": ["salt", "oil"],
-    "optional_ingredients": ["onion", "tomato", "green chutney"],
+    "core_ingredients": [
+      "bread",
+      "paneer"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "green chutney"
+    ],
     "preparation_time": "15 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["tea", "coffee"],
-    "tags": ["quick"],
-    "suggestions": ["Grill for extra crunch.", "Add chutney generously."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "tea",
+      "coffee"
+    ],
+    "tags": [
+      "quick"
+    ],
+    "suggestions": [
+      "Grill for extra crunch.",
+      "Add chutney generously."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Paneer Sandwich.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Cheese Sandwich",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["bread", "cheese"],
-    "basic_ingredients": ["salt", "butter"],
-    "optional_ingredients": ["onion", "tomato", "capsicum"],
+    "core_ingredients": [
+      "bread",
+      "cheese"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "butter"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "capsicum"
+    ],
     "preparation_time": "10 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["tea", "coffee"],
-    "tags": ["quick"],
-    "suggestions": ["Use processed cheese for best melt.", "Grill until golden."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "tea",
+      "coffee"
+    ],
+    "tags": [
+      "quick"
+    ],
+    "suggestions": [
+      "Use processed cheese for best melt.",
+      "Grill until golden."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Cheese Sandwich.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Aloo Tikki",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["potato", "besan"],
-    "basic_ingredients": ["salt", "oil"],
-    "optional_ingredients": ["onion", "green peas", "coriander"],
+    "core_ingredients": [
+      "potato",
+      "besan"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "green peas",
+      "coriander"
+    ],
     "preparation_time": "25 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["green chutney", "tea"],
-    "tags": ["street food"],
-    "suggestions": ["Mash potatoes when hot.", "Shallow fry for less oil."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "green chutney",
+      "tea"
+    ],
+    "tags": [
+      "street food"
+    ],
+    "suggestions": [
+      "Mash potatoes when hot.",
+      "Shallow fry for less oil."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Aloo Tikki.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Dhokla",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["besan", "yogurt"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["lemon", "ginger", "mustard seeds"],
+    "core_ingredients": [
+      "besan",
+      "yogurt"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "lemon",
+      "ginger",
+      "mustard seeds"
+    ],
     "preparation_time": "30 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["green chutney", "tea"],
-    "tags": ["general"],
-    "suggestions": ["Steam for exactly 15 mins.", "Add tempering while hot."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "green chutney",
+      "tea"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Steam for exactly 15 mins.",
+      "Add tempering while hot."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Dhokla.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Paneer Butter Masala",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["paneer", "tomato", "onion"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["butter", "cream", "cashew"],
+    "core_ingredients": [
+      "paneer",
+      "tomato",
+      "onion"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "cream",
+      "cashew"
+    ],
     "preparation_time": "30 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["naan", "roti"],
-    "tags": ["general"],
-    "suggestions": ["Use kasuri methi for aroma.", "Blend gravy smooth."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "naan",
+      "roti"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Use kasuri methi for aroma.",
+      "Blend gravy smooth."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Paneer Butter Masala.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Dal Makhani",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["black lentil", "kidney beans"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["butter", "cream", "onion", "tomato"],
+    "core_ingredients": [
+      "black lentil",
+      "kidney beans"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "cream",
+      "onion",
+      "tomato"
+    ],
     "preparation_time": "60 mins",
     "difficulty_level": "Hard",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["naan", "rice"],
-    "tags": ["general"],
-    "suggestions": ["Slow cook for best flavor.", "Add cream just before serving."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "naan",
+      "rice"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Slow cook for best flavor.",
+      "Add cream just before serving."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Dal Makhani.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Chana Masala",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["chickpeas", "onion", "tomato"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["garlic", "ginger", "amchur"],
+    "core_ingredients": [
+      "chickpeas",
+      "onion",
+      "tomato"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "garlic",
+      "ginger",
+      "amchur"
+    ],
     "preparation_time": "30 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["bhature", "rice"],
-    "tags": ["general"],
-    "suggestions": ["Soak chickpeas overnight.", "Add amchur for tang."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "bhature",
+      "rice"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Soak chickpeas overnight.",
+      "Add amchur for tang."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Chana Masala.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Aloo Gobi",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["potato", "cauliflower"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "tomato", "cumin"],
+    "core_ingredients": [
+      "potato",
+      "cauliflower"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "cumin"
+    ],
     "preparation_time": "25 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["roti", "rice"],
-    "tags": ["general"],
-    "suggestions": ["Cook on medium flame.", "Add garam masala at end."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "roti",
+      "rice"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Cook on medium flame.",
+      "Add garam masala at end."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Aloo Gobi.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Bhindi Masala",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["okra", "onion"],
-    "basic_ingredients": ["salt", "oil"],
-    "optional_ingredients": ["tomato", "cumin", "amchur"],
+    "core_ingredients": [
+      "okra",
+      "onion"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "cumin",
+      "amchur"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["roti", "rice"],
-    "tags": ["general"],
-    "suggestions": ["Dry bhindi before cooking.", "Don't cover while cooking."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "roti",
+      "rice"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Dry bhindi before cooking.",
+      "Don't cover while cooking."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Bhindi Masala.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Mushroom Masala",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["mushroom", "onion", "tomato"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["cream", "capsicum", "coriander"],
+    "core_ingredients": [
+      "mushroom",
+      "onion",
+      "tomato"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "cream",
+      "capsicum",
+      "coriander"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["roti", "rice"],
-    "tags": ["general"],
-    "suggestions": ["Don't overcook mushrooms.", "Add garam masala at end."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "roti",
+      "rice"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Don't overcook mushrooms.",
+      "Add garam masala at end."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Mushroom Masala.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Veg Biryani",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["basmati rice", "mixed vegetables"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "yogurt", "saffron"],
+    "core_ingredients": [
+      "basmati rice",
+      "mixed vegetables"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "yogurt",
+      "saffron"
+    ],
     "preparation_time": "45 mins",
     "difficulty_level": "Hard",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["raita", "salad"],
-    "tags": ["general"],
-    "suggestions": ["Layer rice and vegetables properly.", "Dum cook for 20 mins."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "raita",
+      "salad"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Layer rice and vegetables properly.",
+      "Dum cook for 20 mins."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Veg Biryani.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Jeera Rice",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["basmati rice", "cumin seeds"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["bay leaf", "cloves", "ghee"],
+    "core_ingredients": [
+      "basmati rice",
+      "cumin seeds"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "bay leaf",
+      "cloves",
+      "ghee"
+    ],
     "preparation_time": "25 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["dal", "curry"],
-    "tags": ["general"],
-    "suggestions": ["Wash rice 2-3 times.", "Add whole spices to oil first."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "dal",
+      "curry"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Wash rice 2-3 times.",
+      "Add whole spices to oil first."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Jeera Rice.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Aloo Matar",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["potato", "green peas", "tomato"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "cumin", "coriander"],
+    "core_ingredients": [
+      "potato",
+      "green peas",
+      "tomato"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "cumin",
+      "coriander"
+    ],
     "preparation_time": "25 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["roti", "rice"],
-    "tags": ["general"],
-    "suggestions": ["Cook potatoes until tender.", "Add garam masala at end."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "roti",
+      "rice"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Cook potatoes until tender.",
+      "Add garam masala at end."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Aloo Matar.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Moong Dal",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["moong dal", "cumin"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "tomato", "garlic"],
+    "core_ingredients": [
+      "moong dal",
+      "cumin"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "garlic"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["rice", "roti"],
-    "tags": ["general"],
-    "suggestions": ["Temper with mustard seeds.", "Add lemon juice at end."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "rice",
+      "roti"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Temper with mustard seeds.",
+      "Add lemon juice at end."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Moong Dal.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Masoor Dal",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["masoor dal", "onion", "tomato"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["garlic", "lemon", "spinach"],
+    "core_ingredients": [
+      "masoor dal",
+      "onion",
+      "tomato"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "garlic",
+      "lemon",
+      "spinach"
+    ],
     "preparation_time": "25 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["rice", "roti"],
-    "tags": ["general"],
-    "suggestions": ["No soaking needed.", "Temper with ghee."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "rice",
+      "roti"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "No soaking needed.",
+      "Temper with ghee."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Masoor Dal.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Egg Curry",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["egg", "onion", "tomato"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["cream", "coriander", "green chili"],
+    "core_ingredients": [
+      "egg",
+      "onion",
+      "tomato"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "cream",
+      "coriander",
+      "green chili"
+    ],
     "preparation_time": "30 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["rice", "roti"],
-    "tags": ["general"],
-    "suggestions": ["Hard boil eggs first.", "Fry eggs before adding to gravy."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "rice",
+      "roti"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Hard boil eggs first.",
+      "Fry eggs before adding to gravy."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Egg Curry.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Chicken Tikka Masala",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["chicken", "yogurt", "tomato", "onion"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["cream", "cashew paste", "coriander"],
+    "core_ingredients": [
+      "chicken",
+      "yogurt",
+      "tomato",
+      "onion"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "cream",
+      "cashew paste",
+      "coriander"
+    ],
     "preparation_time": "45 mins",
     "difficulty_level": "Hard",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["naan", "rice"],
-    "tags": ["general"],
-    "suggestions": ["Marinate chicken overnight.", "Grill before adding to gravy."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "naan",
+      "rice"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Marinate chicken overnight.",
+      "Grill before adding to gravy."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Chicken Tikka Masala.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Paneer Bhurji",
-    "type": ["Breakfast", "Lunch"],
+    "type": [
+      "Breakfast",
+      "Lunch"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["paneer", "onion", "tomato"],
-    "basic_ingredients": ["salt", "oil"],
-    "optional_ingredients": ["capsicum", "green chili", "coriander"],
+    "core_ingredients": [
+      "paneer",
+      "onion",
+      "tomato"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "capsicum",
+      "green chili",
+      "coriander"
+    ],
     "preparation_time": "15 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["roti", "toast"],
-    "tags": ["quick"],
-    "suggestions": ["Crumble paneer coarsely.", "Cook on high flame."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "roti",
+      "toast"
+    ],
+    "tags": [
+      "quick"
+    ],
+    "suggestions": [
+      "Crumble paneer coarsely.",
+      "Cook on high flame."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Paneer Bhurji.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Manchurian",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Chinese",
-    "core_ingredients": ["cauliflower", "cornflour"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["soy sauce", "garlic", "spring onion"],
+    "core_ingredients": [
+      "cauliflower",
+      "cornflour"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "soy sauce",
+      "garlic",
+      "spring onion"
+    ],
     "preparation_time": "30 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["fried rice", "noodles"],
-    "tags": ["general"],
-    "suggestions": ["Fry balls until crispy.", "Make sauce spicy."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "fried rice",
+      "noodles"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Fry balls until crispy.",
+      "Make sauce spicy."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Manchurian.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Chilli Paneer",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Chinese",
-    "core_ingredients": ["paneer", "capsicum", "onion"],
-    "basic_ingredients": ["salt", "oil"],
-    "optional_ingredients": ["soy sauce", "garlic", "cornflour"],
+    "core_ingredients": [
+      "paneer",
+      "capsicum",
+      "onion"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "soy sauce",
+      "garlic",
+      "cornflour"
+    ],
     "preparation_time": "25 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["fried rice", "noodles"],
-    "tags": ["general"],
-    "suggestions": ["Fry paneer until golden.", "Toss on high flame."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "fried rice",
+      "noodles"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Fry paneer until golden.",
+      "Toss on high flame."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Chilli Paneer.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Hakka Noodles",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Chinese",
-    "core_ingredients": ["noodles", "cabbage"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["carrot", "capsicum", "soy sauce"],
+    "core_ingredients": [
+      "noodles",
+      "cabbage"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "carrot",
+      "capsicum",
+      "soy sauce"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["manchurian", "soup"],
-    "tags": ["general"],
-    "suggestions": ["Boil noodles al dente.", "Stir fry on high flame."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "manchurian",
+      "soup"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Boil noodles al dente.",
+      "Stir fry on high flame."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Hakka Noodles.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Poori Bhaji",
-    "type": ["Breakfast"],
+    "type": [
+      "Breakfast"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["wheat flour", "potato"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "tomato", "green chili"],
+    "core_ingredients": [
+      "wheat flour",
+      "potato"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "green chili"
+    ],
     "preparation_time": "30 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["pickle", "raita"],
-    "tags": ["general"],
-    "suggestions": ["Knead dough stiff.", "Fry in hot oil."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "pickle",
+      "raita"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Knead dough stiff.",
+      "Fry in hot oil."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Poori Bhaji.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Besan Chilla",
-    "type": ["Breakfast"],
+    "type": [
+      "Breakfast"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["besan", "onion"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["tomato", "coriander", "green chili"],
+    "core_ingredients": [
+      "besan",
+      "onion"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "coriander",
+      "green chili"
+    ],
     "preparation_time": "15 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["green chutney", "tea"],
-    "tags": ["healthy"],
-    "suggestions": ["Make thin batter.", "Cook on medium flame."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "green chutney",
+      "tea"
+    ],
+    "tags": [
+      "healthy"
+    ],
+    "suggestions": [
+      "Make thin batter.",
+      "Cook on medium flame."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Besan Chilla.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Sabudana Khichdi",
-    "type": ["Breakfast"],
+    "type": [
+      "Breakfast"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["sabudana", "potato", "peanut"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["cumin", "lemon", "coriander"],
+    "core_ingredients": [
+      "sabudana",
+      "potato",
+      "peanut"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "cumin",
+      "lemon",
+      "coriander"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["yogurt", "tea"],
-    "tags": ["general"],
-    "suggestions": ["Soak sabudana for 4 hours.", "Don't stir too much."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "yogurt",
+      "tea"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Soak sabudana for 4 hours.",
+      "Don't stir too much."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Sabudana Khichdi.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Sooji Halwa",
-    "type": ["Dessert"],
+    "type": [
+      "Dessert"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["semolina", "ghee"],
-    "basic_ingredients": ["water", "sugar"],
-    "optional_ingredients": ["cashew", "raisin", "cardamom"],
+    "core_ingredients": [
+      "semolina",
+      "ghee"
+    ],
+    "basic_ingredients": [
+      "water",
+      "sugar"
+    ],
+    "optional_ingredients": [
+      "cashew",
+      "raisin",
+      "cardamom"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["puri", "tea"],
-    "tags": ["dessert"],
-    "suggestions": ["Roast semolina until golden.", "Add hot water carefully."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "puri",
+      "tea"
+    ],
+    "tags": [
+      "dessert"
+    ],
+    "suggestions": [
+      "Roast semolina until golden.",
+      "Add hot water carefully."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Sooji Halwa.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Besan Ladoo",
-    "type": ["Dessert"],
+    "type": [
+      "Dessert"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["besan", "ghee"],
-    "basic_ingredients": ["sugar"],
-    "optional_ingredients": ["cardamom", "cashew", "pistachio"],
+    "core_ingredients": [
+      "besan",
+      "ghee"
+    ],
+    "basic_ingredients": [
+      "sugar"
+    ],
+    "optional_ingredients": [
+      "cardamom",
+      "cashew",
+      "pistachio"
+    ],
     "preparation_time": "30 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["tea"],
-    "tags": ["dessert"],
-    "suggestions": ["Roast besan until aromatic.", "Shape while warm."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "tea"
+    ],
+    "tags": [
+      "dessert"
+    ],
+    "suggestions": [
+      "Roast besan until aromatic.",
+      "Shape while warm."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Besan Ladoo.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Halwa",
-    "type": ["Dessert"],
+    "type": [
+      "Dessert"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["semolina", "milk"],
-    "basic_ingredients": ["water", "sugar", "ghee"],
-    "optional_ingredients": ["cashew", "raisin", "cardamom"],
+    "core_ingredients": [
+      "semolina",
+      "milk"
+    ],
+    "basic_ingredients": [
+      "water",
+      "sugar",
+      "ghee"
+    ],
+    "optional_ingredients": [
+      "cashew",
+      "raisin",
+      "cardamom"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["puri"],
-    "tags": ["dessert"],
-    "suggestions": ["Add sugar after roasting.", "Stir continuously."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "puri"
+    ],
+    "tags": [
+      "dessert"
+    ],
+    "suggestions": [
+      "Add sugar after roasting.",
+      "Stir continuously."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Halwa.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Chocolate Brownie",
-    "type": ["Dessert"],
+    "type": [
+      "Dessert"
+    ],
     "cuisine": "Western",
-    "core_ingredients": ["dark chocolate", "egg", "flour"],
-    "basic_ingredients": ["sugar", "butter", "salt"],
-    "optional_ingredients": ["vanilla", "walnut", "cocoa powder"],
+    "core_ingredients": [
+      "dark chocolate",
+      "egg",
+      "flour"
+    ],
+    "basic_ingredients": [
+      "sugar",
+      "butter",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "vanilla",
+      "walnut",
+      "cocoa powder"
+    ],
     "preparation_time": "40 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["ice cream", "coffee"],
-    "tags": ["dessert"],
-    "suggestions": ["Don't overbake.", "Use good quality chocolate."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "ice cream",
+      "coffee"
+    ],
+    "tags": [
+      "dessert"
+    ],
+    "suggestions": [
+      "Don't overbake.",
+      "Use good quality chocolate."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Chocolate Brownie.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Banana Bread",
-    "type": ["Dessert"],
+    "type": [
+      "Dessert"
+    ],
     "cuisine": "Western",
-    "core_ingredients": ["banana", "flour", "egg"],
-    "basic_ingredients": ["sugar", "butter", "salt"],
-    "optional_ingredients": ["vanilla", "walnut", "chocolate chips"],
+    "core_ingredients": [
+      "banana",
+      "flour",
+      "egg"
+    ],
+    "basic_ingredients": [
+      "sugar",
+      "butter",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "vanilla",
+      "walnut",
+      "chocolate chips"
+    ],
     "preparation_time": "60 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["coffee", "tea"],
-    "tags": ["dessert"],
-    "suggestions": ["Use overripe bananas.", "Don't overmix batter."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "coffee",
+      "tea"
+    ],
+    "tags": [
+      "dessert"
+    ],
+    "suggestions": [
+      "Use overripe bananas.",
+      "Don't overmix batter."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Banana Bread.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Onion Pakora",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["onion", "besan"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["green chili", "coriander", "ajwain"],
+    "core_ingredients": [
+      "onion",
+      "besan"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "green chili",
+      "coriander",
+      "ajwain"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["green chutney", "tea"],
-    "tags": ["general"],
-    "suggestions": ["Make batter thick.", "Fry in hot oil."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "green chutney",
+      "tea"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Make batter thick.",
+      "Fry in hot oil."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Onion Pakora.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Corn Chaat",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["sweet corn"],
-    "basic_ingredients": ["salt", "butter"],
-    "optional_ingredients": ["onion", "tomato", "lemon", "chaat masala"],
+    "core_ingredients": [
+      "sweet corn"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "butter"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "lemon",
+      "chaat masala"
+    ],
     "preparation_time": "10 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["lemonade", "tea"],
-    "tags": ["street food"],
-    "suggestions": ["Boil corn first.", "Add butter while hot."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "lemonade",
+      "tea"
+    ],
+    "tags": [
+      "street food"
+    ],
+    "suggestions": [
+      "Boil corn first.",
+      "Add butter while hot."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Corn Chaat.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Masala Omelette",
-    "type": ["Breakfast"],
+    "type": [
+      "Breakfast"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["egg", "onion", "tomato"],
-    "basic_ingredients": ["salt", "oil"],
-    "optional_ingredients": ["cheese", "capsicum", "green chili"],
+    "core_ingredients": [
+      "egg",
+      "onion",
+      "tomato"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "cheese",
+      "capsicum",
+      "green chili"
+    ],
     "preparation_time": "10 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["toast", "tea"],
-    "tags": ["quick"],
-    "suggestions": ["Beat eggs well.", "Fold omelette carefully."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "toast",
+      "tea"
+    ],
+    "tags": [
+      "quick"
+    ],
+    "suggestions": [
+      "Beat eggs well.",
+      "Fold omelette carefully."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Masala Omelette.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Dahi Puri",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["puri", "potato", "yogurt"],
-    "basic_ingredients": ["salt"],
-    "optional_ingredients": ["sev", "tamarind chutney", "green chutney"],
+    "core_ingredients": [
+      "puri",
+      "potato",
+      "yogurt"
+    ],
+    "basic_ingredients": [
+      "salt"
+    ],
+    "optional_ingredients": [
+      "sev",
+      "tamarind chutney",
+      "green chutney"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["lemonade"],
-    "tags": ["street food"],
-    "suggestions": ["Use fresh yogurt.", "Serve immediately."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "lemonade"
+    ],
+    "tags": [
+      "street food"
+    ],
+    "suggestions": [
+      "Use fresh yogurt.",
+      "Serve immediately."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Dahi Puri.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Bread Roll",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["bread", "potato"],
-    "basic_ingredients": ["salt", "oil"],
-    "optional_ingredients": ["onion", "coriander", "green chili"],
+    "core_ingredients": [
+      "bread",
+      "potato"
+    ],
+    "basic_ingredients": [
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "coriander",
+      "green chili"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["ketchup", "tea"],
-    "tags": ["general"],
-    "suggestions": ["Seal bread properly.", "Deep fry until golden."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "ketchup",
+      "tea"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Seal bread properly.",
+      "Deep fry until golden."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Bread Roll.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Kulfi",
-    "type": ["Dessert"],
+    "type": [
+      "Dessert"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["milk", "condensed milk"],
-    "basic_ingredients": ["sugar"],
-    "optional_ingredients": ["pistachio", "saffron", "cardamom"],
+    "core_ingredients": [
+      "milk",
+      "condensed milk"
+    ],
+    "basic_ingredients": [
+      "sugar"
+    ],
+    "optional_ingredients": [
+      "pistachio",
+      "saffron",
+      "cardamom"
+    ],
     "preparation_time": "8 hours (freeze)",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["falooda"],
-    "tags": ["dessert"],
-    "suggestions": ["Reduce milk well.", "Freeze overnight."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "falooda"
+    ],
+    "tags": [
+      "dessert"
+    ],
+    "suggestions": [
+      "Reduce milk well.",
+      "Freeze overnight."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Kulfi.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Green Chutney",
-    "type": ["Condiment"],
+    "type": [
+      "Condiment"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["coriander", "mint"],
-    "basic_ingredients": ["salt"],
-    "optional_ingredients": ["garlic", "lemon", "green chili"],
+    "core_ingredients": [
+      "coriander",
+      "mint"
+    ],
+    "basic_ingredients": [
+      "salt"
+    ],
+    "optional_ingredients": [
+      "garlic",
+      "lemon",
+      "green chili"
+    ],
     "preparation_time": "5 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["samosa", "pakora", "tikka"],
-    "tags": ["general"],
-    "suggestions": ["Blend smooth with little water.", "Add lemon for freshness."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "samosa",
+      "pakora",
+      "tikka"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Blend smooth with little water.",
+      "Add lemon for freshness."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Green Chutney.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Tamarind Chutney",
-    "type": ["Condiment"],
+    "type": [
+      "Condiment"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["tamarind", "jaggery"],
-    "basic_ingredients": ["water", "salt"],
-    "optional_ingredients": ["cumin", "ginger powder", "black salt"],
+    "core_ingredients": [
+      "tamarind",
+      "jaggery"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "cumin",
+      "ginger powder",
+      "black salt"
+    ],
     "preparation_time": "15 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["samosa", "chaat", "pakora"],
-    "tags": ["general"],
-    "suggestions": ["Balance sweet and sour taste.", "Strain before serving."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "samosa",
+      "chaat",
+      "pakora"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Balance sweet and sour taste.",
+      "Strain before serving."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Tamarind Chutney.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Raita",
-    "type": ["Condiment"],
+    "type": [
+      "Condiment"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["yogurt", "cucumber"],
-    "basic_ingredients": ["salt"],
-    "optional_ingredients": ["cumin", "onion", "coriander"],
+    "core_ingredients": [
+      "yogurt",
+      "cucumber"
+    ],
+    "basic_ingredients": [
+      "salt"
+    ],
+    "optional_ingredients": [
+      "cumin",
+      "onion",
+      "coriander"
+    ],
     "preparation_time": "5 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["biryani", "paratha", "pulao"],
-    "tags": ["general"],
-    "suggestions": ["Use chilled yogurt.", "Add roasted cumin."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "biryani",
+      "paratha",
+      "pulao"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Use chilled yogurt.",
+      "Add roasted cumin."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Raita.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Dalgona Coffee",
-    "type": ["Drink"],
+    "type": [
+      "Drink"
+    ],
     "cuisine": "Korean",
-    "core_ingredients": ["instant coffee", "milk"],
-    "basic_ingredients": ["sugar", "water", "ice"],
-    "optional_ingredients": ["chocolate powder"],
+    "core_ingredients": [
+      "instant coffee",
+      "milk"
+    ],
+    "basic_ingredients": [
+      "sugar",
+      "water",
+      "ice"
+    ],
+    "optional_ingredients": [
+      "chocolate powder"
+    ],
     "preparation_time": "10 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["cookies", "biscuits"],
-    "tags": ["general"],
-    "suggestions": ["Whip coffee until fluffy.", "Use cold milk."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "cookies",
+      "biscuits"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Whip coffee until fluffy.",
+      "Use cold milk."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Dalgona Coffee.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Hot Chocolate",
-    "type": ["Drink"],
+    "type": [
+      "Drink"
+    ],
     "cuisine": "Western",
-    "core_ingredients": ["milk", "dark chocolate"],
-    "basic_ingredients": ["sugar"],
-    "optional_ingredients": ["cream", "vanilla", "cinnamon"],
+    "core_ingredients": [
+      "milk",
+      "dark chocolate"
+    ],
+    "basic_ingredients": [
+      "sugar"
+    ],
+    "optional_ingredients": [
+      "cream",
+      "vanilla",
+      "cinnamon"
+    ],
     "preparation_time": "10 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["cookies", "brownie"],
-    "tags": ["general"],
-    "suggestions": ["Use good quality chocolate.", "Don't boil milk."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "cookies",
+      "brownie"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Use good quality chocolate.",
+      "Don't boil milk."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Hot Chocolate.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Adrak Chai",
-    "type": ["Drink"],
+    "type": [
+      "Drink"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["tea leaves", "milk", "ginger"],
-    "basic_ingredients": ["water", "sugar"],
-    "optional_ingredients": ["cardamom", "tulsi"],
+    "core_ingredients": [
+      "tea leaves",
+      "milk",
+      "ginger"
+    ],
+    "basic_ingredients": [
+      "water",
+      "sugar"
+    ],
+    "optional_ingredients": [
+      "cardamom",
+      "tulsi"
+    ],
     "preparation_time": "8 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["biscuits", "pakora"],
-    "tags": ["general"],
-    "suggestions": ["Boil ginger first.", "Simmer on low flame."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "biscuits",
+      "pakora"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Boil ginger first.",
+      "Simmer on low flame."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Adrak Chai.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Lasagna",
-    "type": ["Dinner"],
+    "type": [
+      "Dinner"
+    ],
     "cuisine": "Italian",
-    "core_ingredients": ["lasagna sheets", "cheese", "tomato sauce"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "garlic", "oregano", "basil"],
+    "core_ingredients": [
+      "lasagna sheets",
+      "cheese",
+      "tomato sauce"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "garlic",
+      "oregano",
+      "basil"
+    ],
     "preparation_time": "60 mins",
     "difficulty_level": "Hard",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["garlic bread", "salad"],
-    "tags": ["general"],
-    "suggestions": ["Layer evenly.", "Bake covered first then uncovered."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "garlic bread",
+      "salad"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Layer evenly.",
+      "Bake covered first then uncovered."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Lasagna.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Mac and Cheese",
-    "type": ["Meal"],
+    "type": [
+      "Meal"
+    ],
     "cuisine": "Western",
-    "core_ingredients": ["macaroni", "cheese", "milk"],
-    "basic_ingredients": ["water", "salt", "butter"],
-    "optional_ingredients": ["flour", "mustard powder"],
+    "core_ingredients": [
+      "macaroni",
+      "cheese",
+      "milk"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "butter"
+    ],
+    "optional_ingredients": [
+      "flour",
+      "mustard powder"
+    ],
     "preparation_time": "25 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["garlic bread", "salad"],
-    "tags": ["general"],
-    "suggestions": ["Make roux first.", "Don't overcook pasta."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "garlic bread",
+      "salad"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Make roux first.",
+      "Don't overcook pasta."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Mac and Cheese.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Rava Dosa",
-    "type": ["Breakfast"],
+    "type": [
+      "Breakfast"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["semolina", "rice flour"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "green chili", "coriander"],
+    "core_ingredients": [
+      "semolina",
+      "rice flour"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "green chili",
+      "coriander"
+    ],
     "preparation_time": "15 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["sambar", "coconut chutney"],
-    "tags": ["general"],
-    "suggestions": ["Make thin batter.", "Pour on hot pan."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "sambar",
+      "coconut chutney"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Make thin batter.",
+      "Pour on hot pan."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Rava Dosa.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Methi Thepla",
-    "type": ["Breakfast"],
+    "type": [
+      "Breakfast"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["wheat flour", "fenugreek leaves"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["yogurt", "sesame seeds", "turmeric"],
+    "core_ingredients": [
+      "wheat flour",
+      "fenugreek leaves"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "yogurt",
+      "sesame seeds",
+      "turmeric"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["yogurt", "pickle", "tea"],
-    "tags": ["general"],
-    "suggestions": ["Knead soft dough.", "Roll thin."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "yogurt",
+      "pickle",
+      "tea"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Knead soft dough.",
+      "Roll thin."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Methi Thepla.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Gobi Paratha",
-    "type": ["Breakfast"],
+    "type": [
+      "Breakfast"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["wheat flour", "cauliflower"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "green chili", "ginger"],
+    "core_ingredients": [
+      "wheat flour",
+      "cauliflower"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "green chili",
+      "ginger"
+    ],
     "preparation_time": "25 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["raita", "butter", "tea"],
-    "tags": ["general"],
-    "suggestions": ["Squeeze cauliflower well.", "Roll on low pressure."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "raita",
+      "butter",
+      "tea"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Squeeze cauliflower well.",
+      "Roll on low pressure."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Gobi Paratha.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Spring Roll",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Chinese",
-    "core_ingredients": ["flour", "cabbage", "carrot"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "soy sauce", "garlic"],
+    "core_ingredients": [
+      "flour",
+      "cabbage",
+      "carrot"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "soy sauce",
+      "garlic"
+    ],
     "preparation_time": "40 mins",
     "difficulty_level": "Hard",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["schezwan sauce", "soup"],
-    "tags": ["general"],
-    "suggestions": ["Seal edges with flour paste.", "Fry until golden."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "schezwan sauce",
+      "soup"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Seal edges with flour paste.",
+      "Fry until golden."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Spring Roll.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Papdi Chaat",
-    "type": ["Snack"],
+    "type": [
+      "Snack"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["papdi", "potato", "yogurt"],
-    "basic_ingredients": ["salt"],
-    "optional_ingredients": ["sev", "tamarind chutney", "green chutney", "chickpeas"],
+    "core_ingredients": [
+      "papdi",
+      "potato",
+      "yogurt"
+    ],
+    "basic_ingredients": [
+      "salt"
+    ],
+    "optional_ingredients": [
+      "sev",
+      "tamarind chutney",
+      "green chutney",
+      "chickpeas"
+    ],
     "preparation_time": "20 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["lemonade"],
-    "tags": ["street food"],
-    "suggestions": ["Add chutneys generously.", "Serve immediately."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "lemonade"
+    ],
+    "tags": [
+      "street food"
+    ],
+    "suggestions": [
+      "Add chutneys generously.",
+      "Serve immediately."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Papdi Chaat.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Overnight Oats",
-    "type": ["Breakfast"],
+    "type": [
+      "Breakfast"
+    ],
     "cuisine": "Western",
-    "core_ingredients": ["oats", "milk"],
-    "basic_ingredients": ["sugar"],
-    "optional_ingredients": ["yogurt", "honey", "berries", "chia seeds"],
+    "core_ingredients": [
+      "oats",
+      "milk"
+    ],
+    "basic_ingredients": [
+      "sugar"
+    ],
+    "optional_ingredients": [
+      "yogurt",
+      "honey",
+      "berries",
+      "chia seeds"
+    ],
     "preparation_time": "5 mins + overnight",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["coffee", "juice"],
-    "tags": ["healthy"],
-    "suggestions": ["Soak overnight.", "Add toppings just before eating."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "coffee",
+      "juice"
+    ],
+    "tags": [
+      "healthy"
+    ],
+    "suggestions": [
+      "Soak overnight.",
+      "Add toppings just before eating."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Overnight Oats.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Aloo Palak",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["potato", "spinach", "onion"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["tomato", "cream", "ginger"],
+    "core_ingredients": [
+      "potato",
+      "spinach",
+      "onion"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "cream",
+      "ginger"
+    ],
     "preparation_time": "25 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["roti", "rice"],
-    "tags": ["healthy"],
-    "suggestions": ["Blanch spinach before adding.", "Don't overcook spinach."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "roti",
+      "rice"
+    ],
+    "tags": [
+      "healthy"
+    ],
+    "suggestions": [
+      "Blanch spinach before adding.",
+      "Don't overcook spinach."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Aloo Palak.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Matar Paneer",
-    "type": ["Lunch", "Dinner"],
+    "type": [
+      "Lunch",
+      "Dinner"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["paneer", "green peas", "tomato"],
-    "basic_ingredients": ["water", "salt", "oil"],
-    "optional_ingredients": ["onion", "garlic", "cream"],
+    "core_ingredients": [
+      "paneer",
+      "green peas",
+      "tomato"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "garlic",
+      "cream"
+    ],
     "preparation_time": "25 mins",
     "difficulty_level": "Medium",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["roti", "naan"],
-    "tags": ["general"],
-    "suggestions": ["Add paneer at last.", "Blend gravy for smooth texture."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "roti",
+      "naan"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Add paneer at last.",
+      "Blend gravy for smooth texture."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Matar Paneer.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   },
   {
     "recipe_name": "Chaas",
-    "type": ["Drink"],
+    "type": [
+      "Drink"
+    ],
     "cuisine": "Indian",
-    "core_ingredients": ["yogurt"],
-    "basic_ingredients": ["water", "salt"],
-    "optional_ingredients": ["mint", "ginger", "cumin"],
+    "core_ingredients": [
+      "yogurt"
+    ],
+    "basic_ingredients": [
+      "water",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "mint",
+      "ginger",
+      "cumin"
+    ],
     "preparation_time": "5 mins",
     "difficulty_level": "Easy",
     "source": "Standard Verified Recipe",
-    "pairs_with": ["biryani", "paratha"],
-    "tags": ["general"],
-    "suggestions": ["Blend with ice for refreshing drink.", "Add roasted cumin."],
-    "suggestion_type": "Max"
+    "pairs_with": [
+      "biryani",
+      "paratha"
+    ],
+    "tags": [
+      "general"
+    ],
+    "suggestions": [
+      "Blend with ice for refreshing drink.",
+      "Add roasted cumin."
+    ],
+    "suggestion_type": "Max",
+    "steps": [
+      "Prepare all ingredients for Chaas.",
+      "Heat oil or base in a pan.",
+      "Add core ingredients and cook.",
+      "Add spices and mix well.",
+      "Cook until properly done.",
+      "Adjust seasoning and serve hot."
+    ]
   }
 ]
