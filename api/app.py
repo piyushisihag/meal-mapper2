@@ -249,7 +249,6 @@ def botpress():
     if not ingredients and message:
         ingredients = [i.strip().lower() for i in message.split(",") if i.strip()]
 
-    # If ingredients provided, find recipes
     if ingredients and isinstance(ingredients, list) and len(ingredients) > 0:
         results = find_recipes(ingredients)
         if not results:
@@ -258,24 +257,28 @@ def botpress():
                 "recipes": []
             })
 
-        # Top 3 above 20% match
         top3 = results[:3]
         recipe_text = f"🍽️ Top {len(top3)} recipe(s) for you!\n"
         recipe_text += "─" * 30 + "\n\n"
 
         for idx, recipe in enumerate(top3, 1):
-    recipe_text += f"#{idx} *{recipe['name']}* — {recipe['match_percent']}% match\n"
-    if recipe.get("cuisine"):
-        recipe_text += f"🌍 Cuisine: {recipe['cuisine']} | ⏱️ {recipe.get('preparation_time', '')} | 🎯 {recipe.get('difficulty_level', '')}\n"
-    recipe_text += f"✅ Have: {', '.join(recipe['have'])}\n"
-    missing_text = ', '.join(recipe['missing']) if recipe['missing'] else "(none)"
-    recipe_text += f"❌ Missing: {missing_text}\n"
-    if recipe.get("suggestions"):
-        recipe_text += "💡 Tips:\n"
-        for tip in recipe["suggestions"]:
-            recipe_text += f"  • {tip}\n"
-    recipe_text += f"🍵 Pairs with: {', '.join(recipe['pair_with'])}\n"
-    recipe_text += "\n"
+            recipe_text += f"#{idx} *{recipe['name']}* — {recipe['match_percent']}% match\n"
+            if recipe.get("cuisine"):
+                recipe_text += f"🌍 Cuisine: {recipe['cuisine']} | ⏱️ {recipe.get('preparation_time', '')} | 🎯 {recipe.get('difficulty_level', '')}\n"
+            recipe_text += f"✅ Have: {', '.join(recipe['have'])}\n"
+            missing_text = ', '.join(recipe['missing']) if recipe['missing'] else "(none)"
+            recipe_text += f"❌ Missing: {missing_text}\n"
+            if recipe.get("suggestions"):
+                recipe_text += "💡 Tips:\n"
+                for tip in recipe["suggestions"]:
+                    recipe_text += f"  • {tip}\n"
+            if recipe['missing']:
+                recipe_text += "🔄 Substitutes:\n"
+                for ing in recipe['missing']:
+                    sub = SUBSTITUTES.get(ing.lower(), "try skipping or use closest alternative")
+                    recipe_text += f"  • {ing} → {sub}\n"
+            recipe_text += f"🍵 Pairs with: {', '.join(recipe['pair_with'])}\n"
+            recipe_text += "\n"
 
         return jsonify({
             "reply": recipe_text,
@@ -284,7 +287,6 @@ def botpress():
             "pair_with": top3[0]["pair_with"]
         })
 
-    # If just a chat message
     if message:
         reply = get_chat_reply(message)
         return jsonify({"reply": reply})
