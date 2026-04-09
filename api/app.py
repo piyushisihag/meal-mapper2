@@ -108,21 +108,31 @@ def find_recipes(user_ingredients):
 
     matched = []
     for recipe in recipes:
-        recipe_ingredients = [i.lower() for i in recipe["ingredients"]]
-        have = [i for i in recipe_ingredients if i in user_ingredients]
-        missing = [i for i in recipe_ingredients if i not in user_ingredients]
-        match_percent = int((len(have) / len(recipe_ingredients)) * 100)
+        name = recipe.get("recipe_name") or recipe.get("name", "Unknown")
+        core = [i.lower() for i in recipe.get("core_ingredients", recipe.get("ingredients", []))]
+        have = [i for i in core if i in user_ingredients]
+        missing = [i for i in core if i not in user_ingredients]
 
-        if match_percent >= 20:
-            key = recipe["name"].lower()
-            matched.append({
-                "name": recipe["name"],
-                "match_percent": match_percent,
-                "have": have,
-                "missing": missing,
-                "steps": recipe["steps"],
-                "pair_with": PAIRINGS.get(key, DEFAULT_PAIRS)
-            })
+        if not core:
+            continue
+        match_percent = int((len(have) / len(core)) * 100)
+        if match_percent < 20:
+            continue
+
+        dataset_pairs = recipe.get("pairs_with", [])
+        pair_with = dataset_pairs if dataset_pairs else PAIRINGS.get(name.lower(), DEFAULT_PAIRS)
+
+        matched.append({
+            "name": name,
+            "match_percent": match_percent,
+            "have": have,
+            "missing": missing,
+            "cuisine": recipe.get("cuisine", ""),
+            "preparation_time": recipe.get("preparation_time", ""),
+            "difficulty_level": recipe.get("difficulty_level", ""),
+            "suggestions": recipe.get("suggestions", []),
+            "pair_with": pair_with
+        })
 
     matched.sort(key=lambda x: x["match_percent"], reverse=True)
     return matched
@@ -236,6 +246,9 @@ def botpress():
     message = data.get("message", "").strip()
     ingredients = data.get("ingredients", [])
 
+    if not ingredients and message:
+        ingredients = [i.strip().lower() for i in message.split(",") if i.strip()]
+
     # If ingredients provided, find recipes
     if ingredients and isinstance(ingredients, list) and len(ingredients) > 0:
         results = find_recipes(ingredients)
@@ -251,15 +264,18 @@ def botpress():
         recipe_text += "─" * 30 + "\n\n"
 
         for idx, recipe in enumerate(top3, 1):
-            recipe_text += f"#{idx} *{recipe['name']}* — {recipe['match_percent']}% match\n"
-            recipe_text += "📋 Steps:\n"
-            for i, step in enumerate(recipe["steps"], 1):
-                recipe_text += f"  {i}. {step}\n"
-            recipe_text += f"✅ Have: {', '.join(recipe['have'])}\n"
-            if recipe["missing"]:
-                recipe_text += f"❌ Missing: {', '.join(recipe['missing'])}\n"
-            recipe_text += f"🍵 Pairs with: {', '.join(recipe['pair_with'])}\n"
-            recipe_text += "\n"
+    recipe_text += f"#{idx} *{recipe['name']}* — {recipe['match_percent']}% match\n"
+    if recipe.get("cuisine"):
+        recipe_text += f"🌍 Cuisine: {recipe['cuisine']} | ⏱️ {recipe.get('preparation_time', '')} | 🎯 {recipe.get('difficulty_level', '')}\n"
+    recipe_text += f"✅ Have: {', '.join(recipe['have'])}\n"
+    missing_text = ', '.join(recipe['missing']) if recipe['missing'] else "(none)"
+    recipe_text += f"❌ Missing: {missing_text}\n"
+    if recipe.get("suggestions"):
+        recipe_text += "💡 Tips:\n"
+        for tip in recipe["suggestions"]:
+            recipe_text += f"  • {tip}\n"
+    recipe_text += f"🍵 Pairs with: {', '.join(recipe['pair_with'])}\n"
+    recipe_text += "\n"
 
         return jsonify({
             "reply": recipe_text,
