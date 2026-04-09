@@ -16,7 +16,7 @@ CORS(app)
 # ─────────────────────────────────────────
 def load_recipes():
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    path = os.path.join(base_dir, "recipes.json")
+    path = os.path.join(base_dir, "pro_dataset.json")
     with open(path, "r") as f:
         return json.load(f)
 
@@ -101,6 +101,11 @@ SUBSTITUTES = {
 
 # ─────────────────────────────────────────
 #  Helper: find matching recipes
+#  Matching rules:
+#    - match_percent based ONLY on core_ingredients
+#    - basic_ingredients and optional_ingredients shown as have/missing
+#    - Recipes with 0 core matches but some optional/basic match → 5% priority
+#    - Sort: match_percent desc, then optional matches desc
 # ─────────────────────────────────────────
 def find_recipes(user_ingredients):
     recipes = load_recipes()
@@ -108,23 +113,75 @@ def find_recipes(user_ingredients):
 
     matched = []
     for recipe in recipes:
-        recipe_ingredients = [i.lower() for i in recipe["ingredients"]]
-        have = [i for i in recipe_ingredients if i in user_ingredients]
-        missing = [i for i in recipe_ingredients if i not in user_ingredients]
-        match_percent = int((len(have) / len(recipe_ingredients)) * 100)
+        # ── Support both pro_dataset (recipe_name) and legacy (name) format ──
+        name = recipe.get("recipe_name") or recipe.get("name", "Unknown")
 
-        if match_percent >= 20:
-            key = recipe["name"].lower()
-            matched.append({
-                "name": recipe["name"],
-                "match_percent": match_percent,
-                "have": have,
-                "missing": missing,
-                "steps": recipe["steps"],
-                "pair_with": PAIRINGS.get(key, DEFAULT_PAIRS)
-            })
+        core = [i.lower() for i in recipe.get("core_ingredients", [])]
+        basic = [i.lower() for i in recipe.get("basic_ingredients", [])]
+        optional = [i.lower() for i in recipe.get("optional_ingredients", [])]
 
-    matched.sort(key=lambda x: x["match_percent"], reverse=True)
+        # Fallback for old flat format
+        if not core and not basic and not optional:
+            core = [i.lower() for i in recipe.get("ingredients", [])]
+
+        # ── Core matching (drives match_percent) ──
+        core_have = [i for i in core if i in user_ingredients]
+        core_missing = [i for i in core if i not in user_ingredients]
+
+        # ── Basic and optional matching (display only) ──
+        basic_have = [i for i in basic if i in user_ingredients]
+        basic_missing = [i for i in basic if i not in user_ingredients]
+        optional_have = [i for i in optional if i in user_ingredients]
+        optional_missing = [i for i in optional if i not in user_ingredients]
+
+        # ── Calculate match_percent from core only ──
+        if core:
+            match_percent = int((len(core_have) / len(core)) * 100)
+        else:
+            match_percent = 0
+
+        # ── Skip recipes with nothing in common at all ──
+        total_have = core_have + basic_have + optional_have
+        if not total_have:
+            continue
+
+        # ── Recipes with no core match but some optional/basic match → low priority ──
+        if match_percent == 0:
+            if optional_have or basic_have:
+                match_percent = 5
+            else:
+                continue
+
+        # ── Build combined have/missing lists for output ──
+        have = core_have + basic_have + optional_have
+        missing = core_missing + basic_missing + optional_missing
+
+        # ── pairs_with: use dataset value, fallback to PAIRINGS map, then DEFAULT_PAIRS ──
+        dataset_pairs = recipe.get("pairs_with", [])
+        pair_with = dataset_pairs if dataset_pairs else PAIRINGS.get(name.lower(), DEFAULT_PAIRS)
+
+        matched.append({
+            "name": name,
+            "match_percent": match_percent,
+            "have": have,
+            "missing": missing,
+            "suggestions": recipe.get("suggestions", []),
+            "cuisine": recipe.get("cuisine", ""),
+            "type": recipe.get("type", []),
+            "preparation_time": recipe.get("preparation_time", ""),
+            "difficulty_level": recipe.get("difficulty_level", ""),
+            "tags": recipe.get("tags", []),
+            "pair_with": pair_with,
+            "_optional_have_count": len(optional_have)  # used for secondary sort
+        })
+
+    # ── Sort: match_percent desc, then optional matches desc ──
+    matched.sort(key=lambda x: (x["match_percent"], x["_optional_have_count"]), reverse=True)
+
+    # ── Clean up internal sort key before returning ──
+    for r in matched:
+        r.pop("_optional_have_count", None)
+
     return matched
 
 
@@ -190,11 +247,7 @@ def get_chat_reply(message):
 # ─────────────────────────────────────────
 @app.route("/", methods=["GET"])
 def home():
-    return render_template("index.html")
-
-@app.route("/chat-page")
-def chat_page():
-    return render_template("chatbot.html")
+    return jsonify({"message": "🗺️ Meal Mapper API is running!", "status": "ok"})
 
 
 # ─────────────────────────────────────────
@@ -252,12 +305,15 @@ def botpress():
 
         for idx, recipe in enumerate(top3, 1):
             recipe_text += f"#{idx} *{recipe['name']}* — {recipe['match_percent']}% match\n"
-            recipe_text += "📋 Steps:\n"
-            for i, step in enumerate(recipe["steps"], 1):
-                recipe_text += f"  {i}. {step}\n"
+            if recipe.get("cuisine"):
+                recipe_text += f"🌍 Cuisine: {recipe['cuisine']} | ⏱️ {recipe.get('preparation_time', '')} | 🎯 {recipe.get('difficulty_level', '')}\n"
             recipe_text += f"✅ Have: {', '.join(recipe['have'])}\n"
             if recipe["missing"]:
                 recipe_text += f"❌ Missing: {', '.join(recipe['missing'])}\n"
+            if recipe.get("suggestions"):
+                recipe_text += "💡 Tips:\n"
+                for tip in recipe["suggestions"]:
+                    recipe_text += f"  • {tip}\n"
             recipe_text += f"🍵 Pairs with: {', '.join(recipe['pair_with'])}\n"
             recipe_text += "\n"
 
@@ -277,7 +333,7 @@ def botpress():
 
 
 # ─────────────────────────────────────────
-#  Route 4 - get steps for one recipe
+#  Route 4 - get recipe details by name
 # ─────────────────────────────────────────
 @app.route("/steps", methods=["POST"])
 def steps():
@@ -289,11 +345,19 @@ def steps():
     recipes = load_recipes()
 
     for recipe in recipes:
-        if recipe["name"].lower() == recipe_name:
+        name = recipe.get("recipe_name") or recipe.get("name", "")
+        if name.lower() == recipe_name:
+            dataset_pairs = recipe.get("pairs_with", [])
+            pair_with = dataset_pairs if dataset_pairs else PAIRINGS.get(recipe_name, DEFAULT_PAIRS)
             return jsonify({
-                "name": recipe["name"],
-                "steps": recipe["steps"],
-                "pair_with": PAIRINGS.get(recipe_name, DEFAULT_PAIRS)
+                "name": name,
+                "cuisine": recipe.get("cuisine", ""),
+                "type": recipe.get("type", []),
+                "preparation_time": recipe.get("preparation_time", ""),
+                "difficulty_level": recipe.get("difficulty_level", ""),
+                "tags": recipe.get("tags", []),
+                "suggestions": recipe.get("suggestions", []),
+                "pair_with": pair_with
             })
 
     return jsonify({"error": f"Recipe '{data['recipe_name']}' not found."}), 404
@@ -335,34 +399,42 @@ def chat():
 @app.route("/add_recipe", methods=["POST"])
 def add_recipe():
     data = request.get_json()
-    if not data or "name" not in data or "ingredients" not in data or "steps" not in data:
-        return jsonify({"error": "Please send name, ingredients and steps."}), 400
+    required = ["name", "core_ingredients"]
+    if not data or not all(k in data for k in required):
+        return jsonify({"error": "Please send at least: name and core_ingredients."}), 400
 
     new_recipe = {
-        "name": data["name"].strip(),
-        "ingredients": [i.strip().lower() for i in data["ingredients"]],
-        "steps": data["steps"]
+        "recipe_name": data["name"].strip(),
+        "type": data.get("type", ["Meal"]),
+        "cuisine": data.get("cuisine", ""),
+        "core_ingredients": [i.strip().lower() for i in data["core_ingredients"]],
+        "basic_ingredients": [i.strip().lower() for i in data.get("basic_ingredients", [])],
+        "optional_ingredients": [i.strip().lower() for i in data.get("optional_ingredients", [])],
+        "preparation_time": data.get("preparation_time", ""),
+        "difficulty_level": data.get("difficulty_level", ""),
+        "source": "User Added",
+        "pairs_with": data.get("pairs_with", []),
+        "tags": data.get("tags", ["general"]),
+        "suggestions": data.get("suggestions", []),
+        "suggestion_type": "Max"
     }
 
     recipes = load_recipes()
     for r in recipes:
-        if r["name"].lower() == new_recipe["name"].lower():
+        existing_name = r.get("recipe_name") or r.get("name", "")
+        if existing_name.lower() == new_recipe["recipe_name"].lower():
             return jsonify({"error": "Recipe already exists!"}), 409
 
     recipes.append(new_recipe)
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    with open(os.path.join(base_dir, "recipes.json"), "w") as f:
+    with open(os.path.join(base_dir, "pro_dataset.json"), "w") as f:
         json.dump(recipes, f, indent=2)
 
-    return jsonify({"message": f"Recipe '{new_recipe['name']}' added successfully!"}), 201
+    return jsonify({"message": f"Recipe '{new_recipe['recipe_name']}' added successfully!"}), 201
 
 
 # ─────────────────────────────────────────
 #  Run the app
 # ─────────────────────────────────────────
-
-def handler(request):
-    return app(request.environ, lambda *args: None)
-
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=False)
