@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import json
 import os
+import re
 
 app = Flask(
     __name__,
@@ -115,7 +116,7 @@ def suggest():
 
 
 # ─────────────────────────────────────────
-# Botpress
+# Botpress (MAIN FIXED)
 # ─────────────────────────────────────────
 @app.route("/botpress", methods=["POST"])
 def botpress():
@@ -124,7 +125,6 @@ def botpress():
     message = data.get("message", "")
     ingredients = data.get("ingredients", [])
 
-    # If ingredients not sent directly, parse from message
     if not ingredients and message:
         ingredients = [i.strip().lower() for i in message.split(",") if i.strip()]
 
@@ -132,11 +132,11 @@ def botpress():
         results = find_recipes(ingredients)
 
         if not results:
-            return jsonify({"reply": "😕 No recipes found for these ingredients."})
+            return jsonify({"reply": "😕 No recipes found"})
 
         top3 = results[:3]
 
-        # Fetch full recipe details
+        # 🔥 FULL RECIPE FETCH
         all_recipes = load_recipes()
 
         def get_full_recipe(name):
@@ -147,28 +147,29 @@ def botpress():
 
         top3_full = [get_full_recipe(r["name"]) for r in top3]
 
-        # Build reply text
-        text = "🍽️ Top Recipes for you:\n\n"
+        # TEXT
+        text = "🍽️ Top Recipes:\n\n"
         for i, r in enumerate(top3, 1):
-            text += f"{i}. {r['name']} ({r['match_percent']}% match)\n"
-            if r['missing']:
-                text += f"   Missing: {', '.join(r['missing'])}\n"
-            text += "\n"
+            text += f"{i}. {r['name']} ({r['match_percent']}%)\n"
 
         return jsonify({
             "reply": text,
+
+            # 🔥 FULL DATA
             "top_recipes": top3_full,
+
+            # 🔥 NAMES
             "top_recipe_names": [r["name"] for r in top3]
         })
 
     if message:
         return jsonify({"reply": get_chat_reply(message)})
 
-    return jsonify({"reply": "⚠️ Please send some ingredients."})
+    return jsonify({"reply": "Send ingredients"})
 
 
 # ─────────────────────────────────────────
-# Steps
+# Steps (FIXED)
 # ─────────────────────────────────────────
 @app.route("/steps", methods=["POST"])
 def steps():
@@ -184,7 +185,7 @@ def steps():
                 "steps": recipe.get("steps", [])
             })
 
-    return jsonify({"error": "Recipe not found"})
+    return jsonify({"error": "Not found"})
 
 
 # ─────────────────────────────────────────
@@ -197,7 +198,7 @@ def substitutes():
 
     result = []
     for ing in missing:
-        sub = SUBSTITUTES.get(ing.lower(), "use a similar ingredient")
+        sub = SUBSTITUTES.get(ing.lower(), "use similar ingredient")
         result.append(f"{ing} → {sub}")
 
     return jsonify({"substitutes": result})
