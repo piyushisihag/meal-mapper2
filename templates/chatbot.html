@@ -43,8 +43,17 @@
   </div>
 
   <!-- YOUR SCRIPTS -->
-  <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
-  <script src="https://files.bpcontent.cloud/2026/03/07/12/20260307121906-4ZIKV3NR.js" defer></script>
+  <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
+
+  <script>
+    window.botpressWebChat.init({
+      botId: "PASTE_BOT_ID",
+      clientId: "PASTE_CLIENT_ID",
+      container: "#chat-container",
+      layoutWidth: "100%",
+      layoutHeight: "100%"
+    });
+  </script>
 
 </body>
 </html>
