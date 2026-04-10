@@ -2,56 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Meal Mapper AI</title>
+  <title>Meal Mapper Chat</title>
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #0f172a;
+
+      background: linear-gradient(135deg, #0f172a, #1e293b);
     }
 
-    #chat-container {
+    /* CHAT BOX LIKE LAWGIC */
+    .chat-wrapper {
       width: 80%;
       max-width: 900px;
       height: 80%;
       max-height: 800px;
 
-      border-radius: 12px;
+      border-radius: 16px;
       overflow: hidden;
-      background: #EFE9DD;
 
-      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+      background: #EFE9DD;
+      box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+
+      position: relative;
     }
 
-    /* FORCE botpress into container */
+    /* FORCE BOTPRESS FULL INSIDE */
     .bpWebchat {
-      position: relative !important;
+      position: absolute !important;
+      inset: 0 !important;
       width: 100% !important;
       height: 100% !important;
+    }
+
+    iframe {
+      width: 100% !important;
+      height: 100% !important;
+      position: absolute !important;
+      inset: 0 !important;
     }
   </style>
 </head>
 
 <body>
 
-  <div id="chat-container">
-    <!-- Botpress will auto inject here -->
-  </div>
+  <div class="chat-wrapper"></div>
 
-  <!-- YOUR SCRIPTS -->
-  <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
+  <!-- Botpress Scripts -->
+  <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2026/03/07/12/20260307121906-4ZIKV3NR.js"></script>
 
+  <!-- FORCE OPEN CHAT -->
   <script>
-    window.botpressWebChat.init({
-      botId: "PASTE_BOT_ID",
-      clientId: "PASTE_CLIENT_ID",
-      container: "#chat-container",
-      layoutWidth: "100%",
-      layoutHeight: "100%"
+    window.addEventListener("load", function () {
+      setTimeout(() => {
+        window.botpressWebChat.sendEvent({ type: "show" });
+      }, 500);
     });
   </script>
 
