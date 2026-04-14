@@ -4,7 +4,151 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Meal Mapper — Find Recipes Instantly</title>
-  <link rel="stylesheet" href="/static/style.css" />
+  <style>
+/* =============================================
+   MEAL MAPPER — style.css
+   ============================================= */
+
+:root {
+  --clr-bg: #faf8f4;
+  --clr-surface: #ffffff;
+  --clr-text: #1a1714;
+  --clr-text-muted: #7a7068;
+  --clr-accent: #c8703a;
+  --clr-accent-light: #f5e6d8;
+  --clr-border: #e8e0d4;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+  --radius-md: 16px;
+  --shadow-sm: 0 2px 12px rgba(26,23,20,0.06);
+  --shadow-md: 0 8px 32px rgba(26,23,20,0.10);
+  --shadow-lg: 0 20px 60px rgba(26,23,20,0.14);
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --nav-height: 72px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--clr-bg); color: var(--clr-text); line-height: 1.6; overflow-x: hidden; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* NAVBAR */
+.navbar { position: fixed; top: 0; left: 0; right: 0; height: var(--nav-height); display: flex; align-items: center; justify-content: space-between; padding: 0 5%; background: rgba(250,248,244,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid transparent; z-index: 1000; transition: border-color var(--transition), box-shadow var(--transition); }
+.navbar.scrolled { border-color: var(--clr-border); box-shadow: var(--shadow-sm); }
+.nav-logo { font-family: var(--font-display); font-size: 1.8rem; font-weight: 600; color: var(--clr-accent); letter-spacing: -0.5px; }
+.nav-links { display: flex; gap: 2.5rem; }
+.nav-links a { font-size: 0.88rem; color: var(--clr-text-muted); transition: color var(--transition); }
+.nav-links a:hover { color: var(--clr-text); }
+.nav-cta { background: var(--clr-text); color: var(--clr-bg); border: none; padding: 0.6rem 1.4rem; border-radius: 100px; font-family: var(--font-body); font-size: 0.85rem; cursor: pointer; transition: background var(--transition), transform var(--transition); }
+.nav-cta:hover { background: var(--clr-accent); transform: translateY(-1px); }
+.hamburger { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--clr-text); }
+
+/* HERO */
+.hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: calc(var(--nav-height) + 4rem) 5% 4rem; gap: 3rem; position: relative; overflow: hidden; }
+.hero-bg-text { position: absolute; font-family: var(--font-display); font-size: clamp(8rem, 18vw, 18rem); font-weight: 600; color: var(--clr-accent-light); bottom: -2rem; right: -2rem; pointer-events: none; user-select: none; z-index: 0; }
+.hero-content { position: relative; z-index: 1; }
+.hero-tag { display: inline-block; font-size: 0.75rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--clr-accent); background: var(--clr-accent-light); padding: 0.35rem 1rem; border-radius: 100px; margin-bottom: 1.5rem; }
+.hero-title { font-family: var(--font-display); font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 300; line-height: 1.1; letter-spacing: -1px; margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.9s 0.2s ease forwards; }
+.hero-title em { font-style: italic; color: var(--clr-accent); }
+.hero-sub { font-size: 1.05rem; color: var(--clr-text-muted); max-width: 480px; line-height: 1.7; margin-bottom: 2.5rem; opacity: 0; animation: fadeUp 0.9s 0.4s ease forwards; }
+.hero-actions { display: flex; gap: 1.2rem; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.9s 0.6s ease forwards; }
+.btn-primary { background: var(--clr-accent); color: white; padding: 0.85rem 2rem; border-radius: 100px; font-size: 0.9rem; font-weight: 500; transition: transform var(--transition), box-shadow var(--transition); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,112,58,0.3); }
+.btn-ghost { color: var(--clr-text); padding: 0.85rem 1.5rem; font-size: 0.9rem; border-bottom: 1px solid var(--clr-border); transition: border-color var(--transition), color var(--transition); }
+.btn-ghost:hover { color: var(--clr-accent); border-color: var(--clr-accent); }
+.hero-visual { position: relative; display: flex; align-items: center; justify-content: center; height: 420px; z-index: 1; }
+.plate-ring { position: absolute; border-radius: 50%; border: 1px solid var(--clr-border); animation: spin linear infinite; }
+.ring-1 { width: 200px; height: 200px; animation-duration: 8s; border-style: dashed; }
+.ring-2 { width: 300px; height: 300px; animation-duration: 14s; animation-direction: reverse; }
+.ring-3 { width: 380px; height: 380px; animation-duration: 20s; border-color: var(--clr-accent-light); }
+.plate-center { font-size: 5rem; animation: float 3s ease-in-out infinite; position: relative; z-index: 2; }
+.scroll-hint { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); font-size: 0.72rem; letter-spacing: 3px; text-transform: uppercase; color: var(--clr-text-muted); writing-mode: vertical-rl; animation: pulse 2s ease-in-out infinite; }
+
+/* ABOUT */
+.about { padding: 7rem 5%; background: var(--clr-surface); }
+.section-label { font-size: 0.78rem; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--clr-accent); margin-bottom: 2rem; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.about-text h2 { font-family: var(--font-display); font-size: clamp(2.2rem, 4vw, 3.5rem); font-weight: 300; line-height: 1.15; margin-bottom: 1.5rem; }
+.about-text h2 em { font-style: italic; color: var(--clr-accent); }
+.about-text p { color: var(--clr-text-muted); line-height: 1.8; margin-bottom: 1rem; }
+.about-stats { display: flex; gap: 2.5rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--clr-border); }
+.stat-num { display: block; font-family: var(--font-display); font-size: 2.4rem; font-weight: 300; color: var(--clr-accent); line-height: 1; }
+.stat-label { font-size: 0.8rem; color: var(--clr-text-muted); text-transform: uppercase; letter-spacing: 1px; }
+.about-card-stack { position: relative; height: 340px; }
+.about-card { position: absolute; background: var(--clr-bg); border: 1px solid var(--clr-border); border-radius: var(--radius-md); padding: 2rem; width: 260px; box-shadow: var(--shadow-md); transition: transform var(--transition); }
+.about-card:hover { transform: translateY(-6px); }
+.card-back { top: 30px; left: 20px; transform: rotate(-4deg); }
+.card-back:hover { transform: rotate(-4deg) translateY(-6px); }
+.card-front { top: 80px; left: 100px; }
+.card-emoji { font-size: 2.5rem; display: block; margin-bottom: 1rem; }
+.about-card p { font-size: 0.9rem; color: var(--clr-text-muted); line-height: 1.6; }
+
+/* FEATURES */
+.features { padding: 7rem 5%; background: var(--clr-bg); }
+.section-title { font-family: var(--font-display); font-size: clamp(2.2rem, 4vw, 3.2rem); font-weight: 300; margin-bottom: 3.5rem; line-height: 1.2; }
+.section-title em { font-style: italic; color: var(--clr-accent); }
+.features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.feature-card { background: var(--clr-surface); border: 1px solid var(--clr-border); border-radius: var(--radius-md); padding: 2rem; transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition); cursor: default; }
+.feature-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); border-color: var(--clr-accent); }
+.feature-icon { font-size: 2rem; margin-bottom: 1.2rem; }
+.feature-card h3 { font-family: var(--font-display); font-size: 1.3rem; font-weight: 400; margin-bottom: 0.7rem; }
+.feature-card p { font-size: 0.88rem; color: var(--clr-text-muted); line-height: 1.7; }
+
+/* RECIPES */
+.recipes { padding: 7rem 5%; background: var(--clr-surface); }
+.recipes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.recipe-card { border: 1px solid var(--clr-border); border-radius: var(--radius-md); overflow: hidden; transition: transform var(--transition), box-shadow var(--transition); background: var(--clr-bg); }
+.recipe-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+.recipe-card.featured { border-color: var(--clr-accent); background: var(--clr-accent-light); }
+.recipe-emoji { font-size: 4rem; text-align: center; padding: 2.5rem 2rem 1rem; background: rgba(0,0,0,0.03); }
+.recipe-info { padding: 1.5rem; }
+.recipe-tag { font-size: 0.7rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--clr-accent); background: var(--clr-accent-light); padding: 0.25rem 0.7rem; border-radius: 100px; display: inline-block; margin-bottom: 0.8rem; }
+.recipe-card.featured .recipe-tag { background: white; }
+.recipe-info h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 400; margin-bottom: 0.5rem; }
+.recipe-info p { font-size: 0.87rem; color: var(--clr-text-muted); line-height: 1.6; margin-bottom: 1.2rem; }
+.recipe-meta { display: flex; gap: 1rem; font-size: 0.78rem; color: var(--clr-text-muted); }
+
+/* FOOTER */
+.footer { background: var(--clr-text); color: var(--clr-bg); padding: 5rem 5% 2rem; }
+.footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.footer-logo { font-family: var(--font-display); font-size: 2rem; color: var(--clr-accent); margin-bottom: 1rem; }
+.footer-brand p { font-size: 0.88rem; color: rgba(250,248,244,0.5); line-height: 1.7; }
+.footer-links h4, .footer-contact h4 { font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1.2rem; color: rgba(250,248,244,0.5); }
+.footer-links ul li { margin-bottom: 0.7rem; }
+.footer-links a { font-size: 0.9rem; color: rgba(250,248,244,0.7); transition: color var(--transition); }
+.footer-links a:hover { color: var(--clr-accent); }
+.footer-contact p { font-size: 0.9rem; color: rgba(250,248,244,0.7); margin-bottom: 0.5rem; }
+.footer-socials { display: flex; gap: 1rem; margin-top: 1rem; font-size: 1.2rem; cursor: pointer; }
+.footer-bottom { padding-top: 2rem; text-align: center; font-size: 0.8rem; color: rgba(250,248,244,0.3); }
+
+/* ANIMATIONS */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+@keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) { .features-grid { grid-template-columns: repeat(2, 1fr); } .recipes-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) {
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: block; }
+  .nav-links.open { display: flex; flex-direction: column; position: absolute; top: var(--nav-height); left: 0; right: 0; background: var(--clr-bg); padding: 1.5rem 5%; border-bottom: 1px solid var(--clr-border); box-shadow: var(--shadow-md); gap: 1.2rem; }
+  .hero { grid-template-columns: 1fr; text-align: center; padding-top: calc(var(--nav-height) + 2rem); }
+  .hero-visual { display: none; }
+  .hero-actions { justify-content: center; }
+  .hero-sub { margin: 0 auto 2rem; }
+  .hero-bg-text { display: none; }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-card-stack { display: none; }
+  .features-grid { grid-template-columns: 1fr; }
+  .recipes-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+</style>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 </head>
 <body>
@@ -17,11 +161,8 @@
       <li><a href="#about">About</a></li>
       <li><a href="#features">Features</a></li>
       <li><a href="#recipes">Recipes</a></li>
-    <li><a href="#add-recipe">Add Recipe</a></li>
     </ul>
-    <button class="nav-cta" onclick="window.open('/chat-page', '_blank')">
-      Get Started
-    </button>
+    <button class="nav-cta"  onclick="window.location.href='meal-mapper-react.html'">Get Started</button>
     <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
   </nav>
 
@@ -32,7 +173,7 @@
       <h1 class="hero-title">Staring at your fridge <br/><em>with no idea?</em></h1>
       <p class="hero-sub">Don't know what to cook? Not sure how to cook it? Type your ingredients and we'll instantly map out every meal you can make — step by step. We've got you covered. 🍽️</p>
       <div class="hero-actions">
-        <a href="#recipes" class="btn-primary">Explore Recipes</a>
+        <a href="meal-mapper-react.html" class="btn-primary">Start Cooking →</a>
         <a href="#about" class="btn-ghost">Learn More ↓</a>
       </div>
     </div>
@@ -156,34 +297,6 @@
       </div>
     </div>
   </section>
-  <!-- ADD RECIPE -->
-<section class="add-recipe" id="add-recipe">
-  <div class="section-label">— Contribute</div>
-  <h2 class="section-title">Add Your <em>Recipe</em></h2>
-  <div class="add-recipe-form">
-
-    <div class="form-group">
-      <label>Recipe Name</label>
-      <input type="text" id="recipeName" placeholder="e.g. Masala Maggi"/>
-    </div>
-
-    <div class="form-group">
-      <label>Ingredients <span>(one per line)</span></label>
-      <textarea id="recipeIngredients" rows="5" 
-        placeholder="egg&#10;onion&#10;tomato&#10;salt"></textarea>
-    </div>
-
-    <div class="form-group">
-      <label>Steps <span>(one per line)</span></label>
-      <textarea id="recipeSteps" rows="6" 
-        placeholder="Boil water.&#10;Add noodles.&#10;Add masala.&#10;Serve hot."></textarea>
-    </div>
-
-    <button class="btn-submit" id="submitRecipe">Add Recipe 🍽️</button>
-    <div class="form-message" id="formMessage"></div>
-
-  </div>
-</section>
 
   <!-- FOOTER -->
   <footer class="footer" id="contact">
@@ -199,7 +312,6 @@
           <li><a href="#about">About</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#recipes">Recipes</a></li>
-          <li><a href="#add-recipe">Add Recipe</a></li>
         </ul>
       </div>
       <div class="footer-contact">
@@ -218,6 +330,107 @@
     </div>
   </footer>
 
-  <script src="/static/script.js"></script>
+  <script>
+/* =============================================
+   MEAL MAPPER — script.js
+   ============================================= */
+
+// NAVBAR scroll effect
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 30);
+});
+
+// HAMBURGER menu
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => navLinks.classList.remove('open'));
+});
+
+// SCROLL REVEAL
+const revealTargets = ['.about-grid', '.about-stats', '.feature-card', '.recipe-card', '.footer-top'];
+revealTargets.forEach(selector => {
+  document.querySelectorAll(selector).forEach(el => el.classList.add('reveal'));
+});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const delay = entry.target.dataset.delay || 0;
+      setTimeout(() => entry.target.classList.add('visible'), Number(delay));
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ACTIVE NAV LINK on scroll
+const sections = document.querySelectorAll('section[id], footer[id]');
+const navAnchors = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    if (window.scrollY >= section.offsetTop - 100) current = section.getAttribute('id');
+  });
+  navAnchors.forEach(a => {
+    a.style.color = '';
+    if (a.getAttribute('href') === `#${current}`) a.style.color = 'var(--clr-accent)';
+  });
+});
+
+// FEATURE CARD tilt effect
+document.querySelectorAll('.feature-card').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const rotateX = ((e.clientY - rect.top - rect.height / 2) / (rect.height / 2)) * -6;
+    const rotateY = ((e.clientX - rect.left - rect.width / 2) / (rect.width / 2)) * 6;
+    card.style.transform = `translateY(-6px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    card.style.transition = 'transform 0.1s ease';
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+    card.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease';
+  });
+});
+
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', (e) => {
+    const target = document.querySelector(anchor.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+
+// STAT COUNTER animation
+function animateCounter(el, target, duration = 1200) {
+  let start = 0;
+  const step = target / (duration / 16);
+  const timer = setInterval(() => {
+    start += step;
+    if (start >= target) { el.textContent = target + (el.dataset.suffix || ''); clearInterval(timer); }
+    else el.textContent = Math.floor(start) + (el.dataset.suffix || '');
+  }, 16);
+}
+const statObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const num = parseInt(el.textContent);
+      el.dataset.suffix = el.textContent.replace(num, '');
+      animateCounter(el, num);
+      statObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.stat-num').forEach(el => statObserver.observe(el));
+
+// GET STARTED button
+document.querySelector('.nav-cta').addEventListener('click', () => {
+  document.querySelector('#recipes').scrollIntoView({ behavior: 'smooth' });
+});
+
+console.log('%c🗺️ Meal Mapper Loaded!', 'color: #c8703a; font-size: 1.2rem; font-weight: bold;');
+</script>
 </body>
 </html>
