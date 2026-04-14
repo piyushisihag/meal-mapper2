@@ -293,6 +293,13 @@ def botpress():
 
     return jsonify({"reply": "👋 Hi! Tell me what ingredients you have and I'll find recipes for you!"}), 200
 
+# ─────────────────────────────────────────
+#  Route 4 - CHATBOTHTML
+# ─────────────────────────────────────────
+@app.route("/chatbot", methods=["GET"])
+def chatbot_page():
+    return render_template("meal-mapper-react.html")
+
 
 # ─────────────────────────────────────────
 #  Route 4 - get steps for one recipe
