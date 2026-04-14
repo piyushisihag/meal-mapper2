@@ -6,7 +6,7 @@
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 30);
-);
+});
 
 // HAMBURGER menu
 const hamburger = document.getElementById('hamburger');
@@ -98,41 +98,3 @@ document.querySelector('.nav-cta').addEventListener('click', () => {
 });
 
 console.log('%c🗺️ Meal Mapper Loaded!', 'color: #c8703a; font-size: 1.2rem; font-weight: bold;');
-// === ADD RECIPE ===
-document.getElementById('submitRecipe').addEventListener('click', async () => {
-  const name        = document.getElementById('recipeName').value.trim();
-  const ingredients = document.getElementById('recipeIngredients').value
-                        .split('\n').map(i => i.trim()).filter(Boolean);
-  const steps       = document.getElementById('recipeSteps').value
-                        .split('\n').map(s => s.trim()).filter(Boolean);
-  const msg         = document.getElementById('formMessage');
-
-  if (!name || ingredients.length === 0 || steps.length === 0) {
-    msg.textContent = '⚠️ Please fill in all fields!';
-    msg.className = 'form-message error';
-    return;
-  }
-
-  try {
-    const res = await fetch('/add_recipe', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, ingredients, steps })
-    });
-    const data = await res.json();
-
-    if (res.ok) {
-      msg.textContent = `✅ ${data.message}`;
-      msg.className = 'form-message success';
-      document.getElementById('recipeName').value = '';
-      document.getElementById('recipeIngredients').value = '';
-      document.getElementById('recipeSteps').value = '';
-    } else {
-      msg.textContent = `❌ ${data.error}`;
-      msg.className = 'form-message error';
-    }
-  } catch (err) {
-    msg.textContent = '❌ Could not connect to server.';
-    msg.className = 'form-message error';
-  }
-});
