@@ -2,6 +2,7 @@
   "routes": [
     { "src": "/", "dest": "/api/app" },
     { "src": "/chat", "dest": "/api/app" },
+    { "src": "/meal-mapper-react.html", "dest": "/templates/meal-mapper-react.html" },
     { "src": "/(.*)", "dest": "/api/app" }
   ]
 }
