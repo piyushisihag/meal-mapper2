@@ -147,8 +147,7 @@ ul { list-style: none; }
   .recipes-grid { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr; gap: 2rem; }
 }
-
-</style>
+  </style>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 </head>
 <body>
@@ -162,7 +161,8 @@ ul { list-style: none; }
       <li><a href="#features">Features</a></li>
       <li><a href="#recipes">Recipes</a></li>
     </ul>
-    <button class="nav-cta"  onclick="window.location.href='meal-mapper-react.html'">Get Started</button>
+    <!-- ✅ FIX 1: nav button now goes to /chatbot -->
+    <button class="nav-cta" onclick="window.location.href='/chatbot'">Get Started</button>
     <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
   </nav>
 
@@ -173,7 +173,8 @@ ul { list-style: none; }
       <h1 class="hero-title">Staring at your fridge <br/><em>with no idea?</em></h1>
       <p class="hero-sub">Don't know what to cook? Not sure how to cook it? Type your ingredients and we'll instantly map out every meal you can make — step by step. We've got you covered. 🍽️</p>
       <div class="hero-actions">
-       <a href="meal-mapper-react.html" class="btn-primary">Get Started</a>
+        <!-- ✅ FIX 2: hero button now goes to /chatbot -->
+        <a href="/chatbot" class="btn-primary">Get Started</a>
         <a href="#about" class="btn-ghost">Learn More ↓</a>
       </div>
     </div>
@@ -425,10 +426,9 @@ const statObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 document.querySelectorAll('.stat-num').forEach(el => statObserver.observe(el));
 
-// GET STARTED button
+// ✅ FIX 3: GET STARTED button JS now goes to /chatbot
 document.querySelector('.nav-cta').addEventListener('click', () => {
-  window.location.href = 'meal-mapper-react.html';
-});
+  window.location.href = '/chatbot';
 });
 
 console.log('%c🗺️ Meal Mapper Loaded!', 'color: #c8703a; font-size: 1.2rem; font-weight: bold;');
